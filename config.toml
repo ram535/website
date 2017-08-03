@@ -1,0 +1,9 @@
+theme = "monkeyBooks"
+baseURL = "https://ram535.github.io/website/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+MetaDataFormat = "toml"
+
+[permalinks]
+        page = "/:title/"
+        about = "/:filename/"

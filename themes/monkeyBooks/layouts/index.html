@@ -1,0 +1,19 @@
+{{ partial "header.html" . }}
+
+<div class="container home">
+  <ul>
+  {{ range first 10 .Data.Pages }}
+    {{ if eq .Type "post"}}
+    <li><a href="{{ .Permalink }}">{{ .Title }}</a>  <small>{{ .Date.Format "Jan, 2006" }}</small></li>
+    {{ end }}
+  {{ end }}
+</ul>
+</div>
+<!--   {{ range .Data.Pages }} -->
+<!--     {{ if eq .Type "page" }} -->
+<!--       <li><a href="{{ .Permalink }}">{{ .Title }}</a></li> -->
+<!--     {{ end }} -->
+<!--   {{ end }} -->
+<!-- </div> -->
+<!-- </ul> -->
+{{ partial "footer.html" . }}
