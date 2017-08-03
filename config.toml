@@ -1,5 +1,6 @@
 theme = "monkeyBooks"
 baseURL = "https://ram535.github.io/website/"
+publishDir = "docs"
 languageCode = "en-us"
 title = "My New Hugo Site"
 MetaDataFormat = "toml"
