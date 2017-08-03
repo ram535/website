@@ -1,0 +1,53 @@
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1.5em !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    color: #263238 !important;
+}
+
+body {
+    color: #37474f !important;
+}
+
+/* a, a:visited { */
+/*     color: #212121 !important; */
+/* } */
+
+.home a a:visited{
+    color: #212121 !important;
+}
+
+
+code {
+    font-size: 85% !important;
+    background-color: rgba(27, 31, 35, 0.05) !important;
+    padding: 0.2em !important;
+    padding-top: 0.2em !important;
+    padding-right: 0.2em !important;
+    padding-bottom: 0.2em !important;
+    padding-left: 0.2em !important;
+    margin: 0px !important;
+    margin-top: 0px !important;
+    margin-right: 0px !important;
+    margin-bottom: 0px !important;
+    margin-left: 0px !important;
+    border-radius: 3px !important;
+    border-top-left-radius: 3px !important;
+    border-top-right-radius: 3px !important;
+    border-bottom-right-radius: 3px !important;
+    border-bottom-left-radius: 3px !important;
+}
+
+pre {
+    font-size: .88889em !important;
+    background: #212121 !important;
+    color: #fafafa !important;
+    text-align: initial !important;
+    max-width: 100% !important;
+    padding: 1.5em !important;
+    margin-bottom: 1.5em !important;
+    overflow: auto !important;
+    word-wrap: normal !important;
+    white-space: pre !important;
+    margin: 1em 0px !important;
+}
