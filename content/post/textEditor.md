@@ -9,5 +9,5 @@ title = "Text Editor in Dart"
 
 ## Try it
 Some text.
-[Text Editor](https://ram535.github.io/projects/textEditor/index.html)
+[Text Editor](https://ram535.github.io/dart_text_editor/)
 [source code](https://github.com/ram535/dart_text_editor)
