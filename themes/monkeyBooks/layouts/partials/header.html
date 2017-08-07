@@ -11,3 +11,10 @@
     <title>{{ .Title }}</title>
 </head>
 <body>
+    <ul>
+{{ range .Site.Menus.main.ByWeight }}
+    <li>
+        <a title="{{ .Name }}" href="{{ .URL }}">{{ .Name }}</a>
+    </li>
+{{ end }}
+    </ul>

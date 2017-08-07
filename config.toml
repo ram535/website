@@ -8,3 +8,8 @@ MetaDataFormat = "toml"
 [permalinks]
         page = "/:title/"
         about = "/:filename/"
+
+[[menu.main]]
+    name = "Blog"
+    url = "/"
+    weight = 1
