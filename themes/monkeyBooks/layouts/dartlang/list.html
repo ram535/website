@@ -1,0 +1,10 @@
+{{ partial "header.html" . }}
+<body>
+    <div class="container">
+        <ul>
+          {{ range .Paginator.Pages }}
+          <li> <a href="{{ .Permalink }}">{{ .Title }}</a></li>
+          {{ end }}
+        </ul>
+</div>
+{{ partial "footer.html" . }}

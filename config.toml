@@ -5,11 +5,10 @@ languageCode = "en-us"
 title = "ram535.github.io"
 MetaDataFormat = "toml"
 
-[permalinks]
-        page = "/:title/"
-        about = "/:filename/"
-
 [[menu.main]]
     name = "Blog"
     url = "/"
-    weight = 1
+[[menu.main]]
+    name = "Dartlang"
+    url = "/dartlang"
+

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta name="generator" content="Hugo 0.26" />
     <meta charset="UTF-8">
     <link type="text/css" rel="stylesheet" href="https://ram535.github.io/website/css/reset.css"/>
     <link type="text/css" rel="stylesheet" href="https://ram535.github.io/website/css/main.css"/>
@@ -9,9 +8,8 @@
 
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>ram535.github.io</title>
+    <title>Variables</title>
 </head>
-
 
 <body>
     <div class="container">
@@ -26,29 +24,31 @@
     </li>
         
     </ul>
-  <ul>
+  <h1>Variables</h1>
+  <small>Mon, Aug 7, 2017</small>
   
-    
-  
-    
-    <li><a href="https://ram535.github.io/website/post/texteditor/">Text Editor in Dart</a>  <small>Jul, 2017</small></li>
-    
-  
-    
-    <li><a href="https://ram535.github.io/website/post/neovimlsp/">Dart Completion in Neovim using Language Server Protocol</a>  <small>Apr, 2017</small></li>
-    
-  
-</ul>
+
+<h1 id="uninitialized-variables">Uninitialized variables</h1>
+
+<p>Uninitialized variables have an initial value of null.
+Even variables with numeric types are initially null, because numbers are objects.</p>
+
+<pre><code class="language-dart">  void main() {
+    var a;
+    num b;
+    int c;
+    double d;
+    bool e;
+
+    print(a); // null
+    print(b); // null
+    print(c); // null
+    print(d); // null
+    print(e); // null
+  }
+</code></pre>
+
 </div>
-
-
-
-
-
-
-
-
-
 </body>
 </html>
 
