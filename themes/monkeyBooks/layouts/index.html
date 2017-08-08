@@ -1,27 +1,16 @@
 {{ partial "header.html" . }}
-
-<body>
-    <div class="container">
-    <ul>
-        {{ range .Site.Menus.main }}
+<ul>
+    {{ range .Site.Menus.main }}
     <li>
         <a title="{{ .Name }}" href="{{ .URL }}">{{ .Name }}</a>
     </li>
-        {{ end }}
-    </ul>
-  <ul>
-  {{ range first 10 .Data.Pages }}
+    {{ end }}
+</ul>
+<ul>
+    {{ range first 10 .Data.Pages }}
     {{ if eq .Type "post"}}
     <li><a href="{{ .Permalink }}">{{ .Title }}</a>  <small>{{ .Date.Format "Jan, 2006" }}</small></li>
     {{ end }}
-  {{ end }}
+    {{ end }}
 </ul>
-</div>
-<!--   {{ range .Data.Pages }} -->
-<!--     {{ if eq .Type "page" }} -->
-<!--       <li><a href="{{ .Permalink }}">{{ .Title }}</a></li> -->
-<!--     {{ end }} -->
-<!--   {{ end }} -->
-<!-- </div> -->
-<!-- </ul> -->
 {{ partial "footer.html" . }}
