@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ram535.github.io</title>
+    <title>My Dartlang Journey on ram535.github.io</title>
     <link>https://ram535.github.io/website/dartlang/</link>
-    <description>Recent content on ram535.github.io</description>
+    <description>Recent content in My Dartlang Journey on ram535.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Aug 2017 19:56:30 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 08 Aug 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ram535.github.io/website/dartlang/index.xml" rel="self" type="application/rss+xml" />
     

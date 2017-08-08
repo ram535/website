@@ -1,0 +1,9 @@
+<div class="container">
+    <ul>
+        {{ range .Site.Menus.main.ByWeight }}
+        <li>
+            <a title="{{ .Name }}" href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+        {{ end }}
+    </ul>
+</div>
