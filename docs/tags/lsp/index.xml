@@ -20,7 +20,7 @@
       <description>In this short and simple tutorial we will add Dart completion to Neovim using Language Server Protocol.
 First of all I will suppose that you already have install Neovim and Dart in your machine.
 List of programs that we will need:  dart_language_server LanguageClient-neovim (Neovim Plugin) nvim-completion-manager (Neovim Plugin)  Step 1. Install dart_language_server Since we already have Dart installed, we can install dart_language_server with this command:
-pub global activate dart_language_server  Add the pub bin directory in your path (.</description>
+pub global activate dart_language_server  Add the .</description>
     </item>
     
   </channel>

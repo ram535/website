@@ -13,17 +13,13 @@
 <body>
     <div class="container">
 
-<ul>
-    
-    <li>
-        <a title="Blog" href="/website/">Blog</a>
-    </li>
-    
-    <li>
-        <a title="Dartlang" href="/website/dartlang/">Dartlang</a>
-    </li>
-    
-</ul>
+<nav>
+        
+            <a title="Blog" href="/website/">Blog</a>
+        
+            <a title="Dartlang" href="/website/dartlang/">Dartlang</a>
+        
+</nav>
 
 <h1>Dart Completion in Neovim using Language Server Protocol</h1>
 <small>Wed, Apr 19, 2017</small>
@@ -49,7 +45,7 @@
 <pre><code class="language-dart">pub global activate dart_language_server
 </code></pre>
 
-<p>Add the <strong>pub bin directory</strong> in your path (.bashrc or .zshrc file) so the server can be run as <code>dart_language_server</code>.
+<p>Add the <code>.pub-cache/bin</code> in your path (.bashrc or .zshrc file) so the server can be run as <code>dart_language_server</code>.
 Example:</p>
 
 <pre><code class="language-bash">export PATH=&quot;$PATH&quot;:/home/&lt;your-user-name&gt;/.pub-cache/bin
