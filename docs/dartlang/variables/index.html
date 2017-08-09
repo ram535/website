@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="https://ram535.github.io/website/css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="https://ram535.github.io/website/css/main.css"/>
+    
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Variables</title>
+</head>
+<body>
+
+<div class="sidebar-left">
+    <h2>Blog Posts</h2>
+    <ul>
+        
+        
+        
+        
+        
+        
+        <li>
+            <a href="https://ram535.github.io/website/post/texteditor/">Text Editor in Dart</a>
+        </li>
+        
+        
+        
+        <li>
+            <a href="https://ram535.github.io/website/post/neovimlsp/">Dart Completion in Neovim using Language Server Protocol</a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li>
+            <a href="https://ram535.github.io/website/post/">Posts</a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+    </ul>
+</div>
+
+<div class="sidebar-right">
+<h2>Table of Content</h2>
+<nav id="TableOfContents">
+<ul>
+<li><a href="#uninitialized-variables">Uninitialized variables</a></li>
+</ul>
+</nav>
+</div>
+
+<div class="container">
+<nav>
+        
+            <a title="Blog" href="/website/">Blog</a>
+        
+            <a title="Dartlang" href="/website/dartlang/">Dartlang</a>
+        
+</nav>
+
+<h1>Variables</h1>
+<small>Mon, Aug 7, 2017</small>
+
+
+<h1 id="uninitialized-variables">Uninitialized variables</h1>
+
+<p>Uninitialized variables have an initial value of null.
+Even variables with numeric types are initially null, because numbers are objects.</p>
+
+<pre><code class="language-dart">  void main() {
+    var a;
+    num b;
+    int c;
+    double d;
+    bool e;
+
+    print(a); // null
+    print(b); // null
+    print(c); // null
+    print(d); // null
+    print(e); // null
+  }
+</code></pre>
+
+
+</div>
+</body>
+</html>
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on ram535.github.io</title>
+    <link>https://ram535.github.io/website/post/</link>
+    <description>Recent content in Posts on ram535.github.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 15 Jul 2017 03:46:21 +0200</lastBuildDate>
+    
+	<atom:link href="https://ram535.github.io/website/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Text Editor in Dart</title>
+      <link>https://ram535.github.io/website/post/texteditor/</link>
+      <pubDate>Sat, 15 Jul 2017 03:46:21 +0200</pubDate>
+      
+      <guid>https://ram535.github.io/website/post/texteditor/</guid>
+      <description>Try it Some text. Text Editor source code</description>
+    </item>
+    
+    <item>
+      <title>Dart Completion in Neovim using Language Server Protocol</title>
+      <link>https://ram535.github.io/website/post/neovimlsp/</link>
+      <pubDate>Wed, 19 Apr 2017 12:33:39 +0200</pubDate>
+      
+      <guid>https://ram535.github.io/website/post/neovimlsp/</guid>
+      <description>In this short and simple tutorial we will add Dart completion to Neovim using Language Server Protocol.
+First of all I will suppose that you already have install Neovim and Dart in your machine.
+List of programs that we will need:  dart_language_server LanguageClient-neovim (Neovim Plugin) nvim-completion-manager (Neovim Plugin)  Step 1. Install dart_language_server Since we already have Dart installed, we can install dart_language_server with this command:
+pub global activate dart_language_server  Add the .</description>
+    </item>
+    
+  </channel>
+</rss>
