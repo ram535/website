@@ -6,8 +6,11 @@ tags = ["dart", "spiral"]
 title = "Text Editor in Dart"
 
 +++
+The purpose of this project is to reproduce and create a small text editor using the dart:html library.
+I am basing this project from the book Dart Scalable Application Develoment.
+This is just for the sake of knowledge and getting more familiar with dartlang.
 
 ## Try it
-Some text.
-[Text Editor](https://ram535.github.io/dart_text_editor/)
-[source code](https://github.com/ram535/dart_text_editor)
+You can try the text editor in this link [Text Editor](https://ram535.github.io/dart_text_editor/part23/part23.html).
+
+Check the [Source Code](https://github.com/ram535/dart_text_editor).
