@@ -114,7 +114,7 @@ img {
         }
 
         .sidebar-left {
-                appearance: none;
+                visibility: hidden;
         }
 }
 
