@@ -17,10 +17,9 @@
       <pubDate>Sat, 23 Sep 2017 16:27:46 +0200</pubDate>
       
       <guid>https://ram535.github.io/website/projects/texteditordart/part01/</guid>
-      <description>This is the result of part01. Check the source code.
-We are going to start really simple. The first thing we have to do is to create a html file. This file is the entry point of the whole program.
+      <description>We are going to start really simple. The first thing we have to do is to create a html file. This file is the entry point of the whole program.
 We are goint to called it index.html.
-&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt; &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt; &amp;lt;title&amp;gt;Text Editor Dart&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;textarea id=&amp;quot;editor&amp;quot; cols=&amp;quot;80&amp;quot; autofocus&amp;gt;&amp;lt;/textarea&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;  That&amp;rsquo;s it.</description>
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt; &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt; &amp;lt;title&amp;gt;Text Editor Dart&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;textarea id=&amp;quot;editor&amp;quot; cols=&amp;quot;80&amp;quot; autofocus&amp;gt;&amp;lt;/textarea&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;  That&amp;rsquo;s it. We just add a textarea tag with these propierties id=&amp;ldquo;editor&amp;rdquo;, 80 columns width and autofocus.</description>
     </item>
     
   </channel>
