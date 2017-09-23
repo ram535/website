@@ -6,7 +6,7 @@
     <description>Recent content in Tags on ram535.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Jul 2017 03:46:21 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 19 Apr 2017 12:33:39 +0200</lastBuildDate>
     
 	<atom:link href="https://ram535.github.io/website/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Dart</title>
       <link>https://ram535.github.io/website/tags/dart/</link>
-      <pubDate>Sat, 15 Jul 2017 03:46:21 +0200</pubDate>
+      <pubDate>Wed, 19 Apr 2017 12:33:39 +0200</pubDate>
       
       <guid>https://ram535.github.io/website/tags/dart/</guid>
       <description></description>
@@ -35,15 +35,6 @@
       <pubDate>Wed, 19 Apr 2017 12:33:39 +0200</pubDate>
       
       <guid>https://ram535.github.io/website/tags/neovim/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Spiral</title>
-      <link>https://ram535.github.io/website/tags/spiral/</link>
-      <pubDate>Sat, 15 Jul 2017 03:46:21 +0200</pubDate>
-      
-      <guid>https://ram535.github.io/website/tags/spiral/</guid>
       <description></description>
     </item>
     
