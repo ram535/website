@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Spiral on ram535.github.io</title>
-    <link>https://ram535.github.io/website/tags/spiral/</link>
-    <description>Recent content in Spiral on ram535.github.io</description>
+    <title>Projects on ram535.github.io</title>
+    <link>https://ram535.github.io/website/projects/</link>
+    <description>Recent content in Projects on ram535.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 15 Jul 2017 03:46:21 +0200</lastBuildDate>
     
-	<atom:link href="https://ram535.github.io/website/tags/spiral/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ram535.github.io/website/projects/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

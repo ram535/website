@@ -13,17 +13,13 @@
   </url>
   
   <url>
-    <loc>https://ram535.github.io/website/post/texteditor/</loc>
+    <loc>https://ram535.github.io/website/projects/texteditor/</loc>
     <lastmod>2017-07-15T03:46:21+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://ram535.github.io/website/post/neovimlsp/</loc>
     <lastmod>2017-04-19T12:33:39+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ram535.github.io/website/post/neovimlsp/</loc>
   </url>
   
   <url>
@@ -51,6 +47,12 @@
   
   <url>
     <loc>https://ram535.github.io/website/post/</loc>
+    <lastmod>2017-04-19T12:33:39+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ram535.github.io/website/projects/</loc>
     <lastmod>2017-07-15T03:46:21+02:00</lastmod>
     <priority>0</priority>
   </url>

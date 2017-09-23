@@ -23,10 +23,10 @@ void main() { var a; num b; int c; double d; bool e; print(a); // null print(b);
     
     <item>
       <title>Text Editor in Dart</title>
-      <link>https://ram535.github.io/website/post/texteditor/</link>
+      <link>https://ram535.github.io/website/projects/texteditor/</link>
       <pubDate>Sat, 15 Jul 2017 03:46:21 +0200</pubDate>
       
-      <guid>https://ram535.github.io/website/post/texteditor/</guid>
+      <guid>https://ram535.github.io/website/projects/texteditor/</guid>
       <description>Try it Some text. Text Editor source code</description>
     </item>
     
@@ -40,15 +40,6 @@ void main() { var a; num b; int c; double d; bool e; print(a); // null print(b);
 First of all I will suppose that you already have install Neovim and Dart in your machine.
 List of programs that we will need:  dart_language_server LanguageClient-neovim (Neovim Plugin) nvim-completion-manager (Neovim Plugin)  Step 1. Install dart_language_server Since we already have Dart installed, we can install dart_language_server with this command:
 pub global activate dart_language_server  Add the .</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://ram535.github.io/website/post/neovimlsp/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ram535.github.io/website/post/neovimlsp/</guid>
-      <description> neovimLSP.html   zsh:1: command not found: multimarkdown   </description>
     </item>
     
   </channel>
