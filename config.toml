@@ -11,3 +11,6 @@ MetaDataFormat = "toml"
 [[menu.main]]
     name = "Dartlang"
     url = "/dartlang/"
+[[menu.main]]
+    name = "Projects"
+    url = "/projects/"
