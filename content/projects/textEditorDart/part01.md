@@ -57,6 +57,6 @@ Got to `http://localhost:8080/` in your browser and you will see this:
 
 ![image](../../../img/text-editor-dart-part01.jpg)
 
-Check the [source code](https://github.com/ram535/text-editor-dart/tree/master/part02).
+Check the [source code](https://github.com/ram535/text-editor-dart/tree/master/part01).
 
 This is the end of part01.
