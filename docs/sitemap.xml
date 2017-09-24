@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ram535.github.io/website/projects/texteditordart/part02/</loc>
+    <lastmod>2017-09-24T16:27:46+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ram535.github.io/website/projects/texteditordart/part01/</loc>
     <lastmod>2017-09-23T16:27:46+02:00</lastmod>
   </url>
@@ -69,7 +74,7 @@
   
   <url>
     <loc>https://ram535.github.io/website/</loc>
-    <lastmod>2017-09-23T16:27:46+02:00</lastmod>
+    <lastmod>2017-09-24T16:27:46+02:00</lastmod>
     <priority>0</priority>
   </url>
   

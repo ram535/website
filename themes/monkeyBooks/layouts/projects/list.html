@@ -1,6 +1,7 @@
 {{ partial "header.html" . }}
 {{ partial "nav.html" . }}
 {{ .Content }}
+<br>
 <ul>
 {{ range .Sections }}
 <li><a href = "{{ .RelPermalink }}">{{ .Title }}</a></li>
@@ -8,5 +9,6 @@
 <ul>
 {{ range .Paginator.Pages }}
 <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+<br>
 {{ end }}
 {{ partial "footer.html" . }}

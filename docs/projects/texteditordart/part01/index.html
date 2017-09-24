@@ -25,30 +25,51 @@
 
 <h1>Part01 entry point of the webapp</h1>
 <small>Sat, Sep 23, 2017</small>
-<p>We are going to start really simple. The first thing we have to do is to create a html file.
-This file is the entry point of the whole program.</p>
+<p>We are going to start really simple. Let&rsquo;s create the files that we will need to start writing our program usig
+the <a href="http://stagehand.pub/">stagehand</a> program that will generate the initial files necesary to start writing our app.</p>
 
-<p>We are goint to called it index.html.</p>
-
-<pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;meta charset=&quot;utf-8&quot;&gt;
-        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-        &lt;title&gt;Text Editor Dart&lt;/title&gt;
-    &lt;/head&gt;
-
-    &lt;body&gt;
-            &lt;textarea  id=&quot;editor&quot;  cols=&quot;80&quot;  autofocus&gt;&lt;/textarea&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
+<pre><code class="language-bash">stagehand web-simple
 </code></pre>
 
-<p>That&rsquo;s it. We just add a textarea tag with these propierties id=&ldquo;editor&rdquo;, 80 columns width and autofocus.</p>
+<p>After running the command we get this files:</p>
 
-<p>This is the result of <a href="https://ram535.github.io/text-editor-dart/part01/index.html">part01</a>.</p>
+<pre><code>.
+├── analysis_options.yaml
+├── CHANGELOG.md
+├── LICENSE
+├── pubspec.yaml
+├── README.md
+└── web
+    ├── favicon.ico
+    ├── index.html
+    ├── main.dart
+    └── styles.css
+</code></pre>
 
-<p>Check the <a href="https://github.com/ram535/text-editor-dart/tree/master/part01">source code</a>.</p>
+<p>Let&rsquo;s explain what this files do:</p>
+
+<ul>
+<li><code>index.html</code> is the entry point of our app from here we call the <code>main.dart</code> file.</li>
+<li><code>main.dart</code> this is the entry point of all the functionalities that we will add to the text editor.</li>
+<li><code>styless.css</code> is just a style cheat, nothing special here.</li>
+<li><code>favicon.ico</code> is just a favicon, nothing special here.</li>
+<li><code>pubspec.yaml</code> here are some information about our project that is use by the <code>pub</code> package manager
+such a the dependecies that we need for our app.</li>
+<li><code>README.md</code> here you can add general information about your program for the audience.</li>
+<li><code>LICENSE</code> here you add the license for your program.</li>
+<li><code>analysis_options.yaml</code> here you can add options for the analazer. The analazer performs static analysis and
+allows you to find problems before executing a single line of code.</li>
+</ul>
+
+<p>To get all the dependecies run this command on the root of the project (where the pubspec.yaml is located):</p>
+
+<pre><code class="language-bash">pub get
+</code></pre>
+
+<p>To try the app run this command on the root of the project:</p>
+
+<pre><code class="language-bash">pub serve
+</code></pre>
 
 
 </div>

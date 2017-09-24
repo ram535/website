@@ -3,28 +3,50 @@ title = "Part01 entry point of the webapp"
 date = 2017-09-23T16:27:46+02:00
 +++
 
-We are going to start really simple. The first thing we have to do is to create a html file.
-This file is the entry point of the whole program.
+We are going to start really simple. Let's create the files that we will need to start writing our program usig
+the [stagehand](http://stagehand.pub/) program that will generate the initial files necesary to start writing our app.
 
-We are goint to called it index.html.
-
-```html
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Text Editor Dart</title>
-    </head>
-
-    <body>
-            <textarea  id="editor"  cols="80"  autofocus></textarea>
-    </body>
-</html>
+``` bash
+stagehand web-simple
 ```
 
-That's it. We just add a textarea tag with these propierties id="editor", 80 columns width and autofocus.
+After running the command we get this files:
 
-This is the result of [part01](https://ram535.github.io/text-editor-dart/part01/index.html).
+```
+.
+├── analysis_options.yaml
+├── CHANGELOG.md
+├── LICENSE
+├── pubspec.yaml
+├── README.md
+└── web
+    ├── favicon.ico
+    ├── index.html
+    ├── main.dart
+    └── styles.css
+```
 
-Check the [source code](https://github.com/ram535/text-editor-dart/tree/master/part01).
+Let's explain what this files do:
+
+- `index.html` is the entry point of our app from here we call the `main.dart` file.
+- `main.dart` this is the entry point of all the functionalities that we will add to the text editor.
+- `styless.css` is just a style cheat, nothing special here.
+- `favicon.ico` is just a favicon, nothing special here.
+- `pubspec.yaml` here are some information about our project that is use by the `pub` package manager
+such a the dependecies that we need for our app.
+- `README.md` here you can add general information about your program for the audience.
+- `LICENSE` here you add the license for your program.
+- `analysis_options.yaml` here you can add options for the analazer. The analazer performs static analysis and
+allows you to find problems before executing a single line of code.
+
+To get all the dependecies run this command on the root of the project (where the pubspec.yaml is located):
+
+``` bash
+pub get
+```
+
+To try the app run this command on the root of the project:
+
+``` bash
+pub serve
+```
