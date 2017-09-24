@@ -9,15 +9,21 @@ We are going to add a textarea tag with these propierties id="editor", 80 column
 ``` html
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Text Editor Dart</title>
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>part02</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+    <script defer src="main.dart" type="application/dart"></script>
+    <script defer src="packages/browser/dart.js"></script>
+</head>
 
-    <body>
-            <textarea  id="editor"  cols="80"  autofocus></textarea>
-    </body>
+<body>
+  <div id="output"></div>
+  <textarea  id="editor"  cols="80"  autofocus></textarea>
+</body>
 </html>
 ```
 

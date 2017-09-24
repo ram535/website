@@ -38,7 +38,11 @@ html {
 }
 
 li {
-    border: 0.2em
+    padding: 0.2em
+}
+
+p {
+    padding: 0.2em
 }
 
 nav > a {
