@@ -30,6 +30,8 @@ We are going to add a textarea tag with these propierties id="editor", 80 column
 That's it. From here on the next parts of the tutorial we are just going to add functionalities based on what the user type on
 the `<textarea></textarea>` tag.
 
-This is the result of [part02](https://ram535.github.io/text-editor-dart/part02/index.html).
+Run `pub serve` on the root of the project and go to `http://localhost:8080/` in your browser.
+
+*Result:* [part02](https://ram535.github.io/text-editor-dart/part02/index.html).
 
 Check the [source code](https://github.com/ram535/text-editor-dart/tree/master/part02).
