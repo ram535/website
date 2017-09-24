@@ -52,3 +52,9 @@ To try the app run this command on the root of the project:
 ``` bash
 pub serve
 ```
+
+Got to `http://localhost:8080/` in your browser and you will see this:
+
+![image](../../../img/text-editor-dart-part01.jpg)
+
+This is the end of part01.
