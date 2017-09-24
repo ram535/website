@@ -2,7 +2,6 @@
 title = "Text Editor in Dart"
 date = "2017-07-15T03:46:21+02:00"
 description = "Making a simple text editor in dartlang"
-meta_img = "/images/image.jpg"
 
 +++
 The purpose of this project is to reproduce and create a small text editor using the dart:html library.
@@ -15,3 +14,8 @@ You can try the text editor in this link [Text Editor](https://ram535.github.io/
 Check the [Source Code](https://github.com/ram535/dart_text_editor).
 
 ## Tutorial
+In this tutorial I explain how to create the text editor using the dart:html library.
+I try to explain it step by step so begginers can understand every part of the code.
+The tutorial is divided in many parts intentionaly and in each new part we are going
+to explain or add something new that will help us develop the text editor.
+
