@@ -12,14 +12,13 @@
     
     
     <item>
-      <title>Part02</title>
+      <title>Part02 modifying index.html</title>
       <link>https://ram535.github.io/website/projects/texteditordart/part02/</link>
       <pubDate>Sun, 24 Sep 2017 16:27:46 +0200</pubDate>
       
       <guid>https://ram535.github.io/website/projects/texteditordart/part02/</guid>
-      <description>We are going to start really simple. The first thing we have to do is to create a html file. This file is the entry point of the whole program.
-We are goint to called it index.html.
-&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt; &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt; &amp;lt;title&amp;gt;Text Editor Dart&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;textarea id=&amp;quot;editor&amp;quot; cols=&amp;quot;80&amp;quot; autofocus&amp;gt;&amp;lt;/textarea&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;  That&amp;rsquo;s it. We just add a textarea tag with these propierties id=&amp;ldquo;editor&amp;rdquo;, 80 columns width and autofocus.</description>
+      <description>index.html is the entry point of the whole program. We are going to add a textarea tag with these propierties id=&amp;ldquo;editor&amp;rdquo;, 80 columns width and autofocus.
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt; &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt; &amp;lt;title&amp;gt;Text Editor Dart&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;textarea id=&amp;quot;editor&amp;quot; cols=&amp;quot;80&amp;quot; autofocus&amp;gt;&amp;lt;/textarea&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;  That&amp;rsquo;s it. From here on the next parts of the tutorial we are just going to add functionalities based on what the user type on the &amp;lt;textarea&amp;gt;&amp;lt;/textarea&amp;gt; tag.</description>
     </item>
     
     <item>

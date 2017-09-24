@@ -1,12 +1,10 @@
 +++
-title = "Part02"
+title = "Part02 modifying index.html"
 date = 2017-09-24T16:27:46+02:00
 +++
 
-We are going to start really simple. The first thing we have to do is to create a html file.
-This file is the entry point of the whole program.
-
-We are goint to called it `index.html`.
+`index.html` is the entry point of the whole program.
+We are going to add a textarea tag with these propierties id="editor", 80 columns width and autofocus.
 
 ``` html
 <!DOCTYPE html>
@@ -23,8 +21,9 @@ We are goint to called it `index.html`.
 </html>
 ```
 
-That's it. We just add a textarea tag with these propierties id="editor", 80 columns width and autofocus.
+That's it. From here on the next parts of the tutorial we are just going to add functionalities based on what the user type on
+the `<textarea></textarea>` tag.
 
-This is the result of [part01](https://ram535.github.io/text-editor-dart/part01/index.html).
+This is the result of [part02](https://ram535.github.io/text-editor-dart/part02/index.html).
 
-Check the [source code](https://github.com/ram535/text-editor-dart/tree/master/part01).
+Check the [source code](https://github.com/ram535/text-editor-dart/tree/master/part02).
