@@ -39,6 +39,8 @@ such a the dependecies that we need for our app.
 - `analysis_options.yaml` here you can add options for the analazer. The analazer performs static analysis and
 allows you to find problems before executing a single line of code.
 
+<br>
+
 To get all the dependecies run this command on the root of the project (where the pubspec.yaml is located):
 
 ``` bash
