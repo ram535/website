@@ -1,5 +1,5 @@
 +++
-title = "Part02 modifying index.html"
+title = "Part02 entry point"
 date = 2017-09-24T16:27:46+02:00
 +++
 
