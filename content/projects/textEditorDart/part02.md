@@ -32,6 +32,6 @@ the `<textarea></textarea>` tag.
 
 Run `pub serve` on the root of the project and go to `http://localhost:8080/` in your browser.
 
-*Result:* [part02](https://ram535.github.io/text-editor-dart/part02/index.html).
+Result: [part02](https://ram535.github.io/text-editor-dart/part02/index.html).
 
 Check the [source code](https://github.com/ram535/text-editor-dart/tree/master/part02).
