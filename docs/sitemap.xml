@@ -8,11 +8,6 @@
   </url>
   
   <url>
-    <loc>https://ram535.github.io/website/dartlang/variables/</loc>
-    <lastmod>2017-08-07T19:56:30+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ram535.github.io/website/post/neovimlsp/</loc>
     <lastmod>2017-04-19T12:33:39+02:00</lastmod>
   </url>
@@ -69,8 +64,12 @@
   </url>
   
   <url>
+    <loc>https://ram535.github.io/website/dartlang/variables/</loc>
+  </url>
+  
+  <url>
     <loc>https://ram535.github.io/website/</loc>
-    <lastmod>2017-08-07T19:56:30+02:00</lastmod>
+    <lastmod>2017-04-19T12:33:39+02:00</lastmod>
     <priority>0</priority>
   </url>
   

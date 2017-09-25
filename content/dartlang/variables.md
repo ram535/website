@@ -1,11 +1,8 @@
 +++
-title = "Variables"
-date = 2017-08-07T19:56:30+02:00
+title = "Uninitialized variables"
 +++
 
-## Uninitialized variables
-Uninitialized variables have an initial value of null.
-Even variables with numeric types are initially null, because numbers are objects.
+Uninitialized variables have an initial value of null because everyting in dart is an object.
 
 ``` dart
   void main() {
