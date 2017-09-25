@@ -1,6 +1,6 @@
 html {
         font-family: 'Roboto', sans-serif;
-color: #727779;
+        color: #727779;
 }
 
 /* @font-face is a css rule which allows you to download a particular font from your server to render a webpage if the user hasn't got that font installed.  */
@@ -31,69 +31,73 @@ color: #727779;
         left: 0;
         margin-top: 8em;
         padding-left: 1em;
-    border-right: 1px solid #6c6c6c;
+        border-right: 1px solid #6c6c6c;
 }
 
 .sidebar-left li {
-    padding: 0.2em
+        padding: 0.2em
 }
 
 nav {
-    border-bottom: 1px solid #F0F0F0;
-}
-ul {
-    display: block;
-    list-style-type: disc;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-start: 40px;
-}
-
-li {
-    display: list-item;
-    text-align: -webkit-match-parent;
-}
-
-p {
-    display: block;
-color: #727779;
-line-height: 1.2;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
+        border-bottom: 1px solid #F0F0F0;
 }
 
 nav > a {
-        /* position: static; */
-        /* flex-direction: row; */
-        /* align-items: center; */
-        /* width: auto; */
+        color: #595d5f;
         display:inline-block;
         padding: 1em;
         font-weight: bold;
 }
 
+nav + ul {
+        list-style-type: none;
+        -webkit-padding-start: 0px;
+}
+
+ul {
+        display: block;
+        list-style-type: disc;
+        -webkit-margin-before: 1em;
+        -webkit-margin-after: 1em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        -webkit-padding-start: 40px;
+}
+
+li {
+        display: list-item;
+        text-align: -webkit-match-parent;
+}
+
+p {
+        display: block;
+        color: #727779;
+        line-height: 1.2;
+        -webkit-margin-before: 1em;
+        -webkit-margin-after: 1em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+}
+
+
 h1{
-margin: 0px;
-    font-size: 20px;
-    text-align: center;
-    margin: 30px 20px 0 20px;
-    padding: 0 90px 20px 90px;
-    line-height: 1.5;
-    font-weight: bold;
+        margin: 0px;
+        font-size: 20px;
+        text-align: center;
+        margin: 30px 20px 0 20px;
+        padding: 0 90px 20px 90px;
+        line-height: 1.5;
+        font-weight: bold;
         color: #595d5f;
 }
 h2 {
-    display: block;
-    font-size: 1.1em;
-    -webkit-margin-before: 0.83em;
-    -webkit-margin-after: 0.83em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    font-weight: bold;
+        display: block;
+        font-size: 1.1em;
+        -webkit-margin-before: 0.83em;
+        -webkit-margin-after: 0.83em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        font-weight: bold;
         color: #595d5f;
 }
 
@@ -114,12 +118,12 @@ small{
 
 
 code {
-    display: inline-block;
-    background: #F0F0F0;
-    color: #666a6c;
-    font-family: "range_mono";
-    border-radius: 9px;
-    padding: 1px 8px;
+        display: inline-block;
+        background: #F0F0F0;
+        color: #666a6c;
+        font-family: "range_mono";
+        border-radius: 9px;
+        padding: 1px 8px;
 }
 
 pre {
@@ -157,6 +161,6 @@ img {
 
 
 a{
-color: #f05a7f;
-    text-decoration: none;
+        color: #f05a7f;
+        text-decoration: none;
 }
