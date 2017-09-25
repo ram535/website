@@ -1,9 +1,8 @@
 +++
 title = "Text Editor in Dart"
-date = "2017-07-15T03:46:21+02:00"
 description = "Making a simple text editor in dartlang"
-
 +++
+
 The purpose of this project is to reproduce and create a small text editor using the dart:html library.
 I am basing this project from the book [Dart Scalable Application Develoment](https://www.packtpub.com/application-development/dart-scalable-application-development).
 The objetive of this project is to get familiar with the Dart Programming Language.

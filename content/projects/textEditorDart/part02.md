@@ -1,6 +1,5 @@
 +++
 title = "Part02 entry point"
-date = 2017-09-24T16:27:46+02:00
 +++
 
 `index.html` is the entry point of the whole program.

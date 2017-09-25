@@ -1,7 +1,6 @@
 +++
 title = "Variables"
 date = 2017-08-07T19:56:30+02:00
-
 +++
 
 ## Uninitialized variables

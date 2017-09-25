@@ -1,6 +1,5 @@
 +++
 title = "Part01 set up"
-date = 2017-09-23T16:27:46+02:00
 +++
 
 We are going to start really simple. Let's create the files that we will need to start writing our program usig

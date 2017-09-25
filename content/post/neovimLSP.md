@@ -4,7 +4,6 @@ description = "How add Dart completion to Neovim"
 meta_img = "/images/image.jpg"
 tags = ["dart", "neovim", "LSP"]
 title = "Dart Completion in Neovim using Language Server Protocol"
-
 +++
 
 In this short and simple tutorial we will add Dart completion to Neovim using
