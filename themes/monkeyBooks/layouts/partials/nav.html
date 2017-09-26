@@ -3,4 +3,9 @@
         {{ range .Site.Menus.main.ByWeight }}
             <a title="{{ .Name }}" href="{{ .URL }}">{{ .Name }}</a>
         {{ end }}
+        <div class="social">
+<a href="https://github.com/ram535"><img class="icon-social" src="{{ .Site.BaseURL }}img/github.svg" alt="Github"/></a>
+<a href="https://twitter.com/ram232"><img class="icon-social" src="{{ .Site.BaseURL }}img/twitter.svg" alt="Twitter"/></a>
+        </div>
 </nav>
+

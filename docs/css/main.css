@@ -163,3 +163,14 @@ pre {
 pre > code{
         border: unset;
 }
+
+.icon-social {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.social {
+display: inline-block;
+float: right;
+margin: 0.7em;
+}

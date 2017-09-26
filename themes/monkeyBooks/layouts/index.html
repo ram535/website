@@ -1,7 +1,8 @@
 {{ partial "header.html" . }}
 {{ partial "nav" . }}
+{{ .Content }}
 <ul>
-    {{ range first 10 .Data.Pages }}
+    {{ range .Data.Pages }}
     {{ if eq .Type "post"}}
     <li><a href="{{ .Permalink }}">{{ .Title }}</a>  <small>{{ .Date.Format "Jan, 2006" }}</small></li>
     {{ end }}

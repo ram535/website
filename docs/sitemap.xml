@@ -54,6 +54,11 @@
   </url>
   
   <url>
+    <loc>https://ram535.github.io/website/</loc>
+    <lastmod>2017-04-19T12:33:39+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ram535.github.io/website/tags/</loc>
     <lastmod>2017-04-19T12:33:39+02:00</lastmod>
     <priority>0</priority>
@@ -65,12 +70,6 @@
   
   <url>
     <loc>https://ram535.github.io/website/dartlang/unitialized_variables/</loc>
-  </url>
-  
-  <url>
-    <loc>https://ram535.github.io/website/</loc>
-    <lastmod>2017-04-19T12:33:39+02:00</lastmod>
-    <priority>0</priority>
   </url>
   
 </urlset>
