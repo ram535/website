@@ -12,11 +12,11 @@
     
     
     <item>
-      <title>Uninitialized variables</title>
-      <link>https://ram535.github.io/website/dartlang/variables/</link>
+      <title>Unitialized variables</title>
+      <link>https://ram535.github.io/website/dartlang/unitialized_variables/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ram535.github.io/website/dartlang/variables/</guid>
+      <guid>https://ram535.github.io/website/dartlang/unitialized_variables/</guid>
       <description>Uninitialized variables have an initial value of null because everyting in dart is an object.
 void main() { var a; num b; int c; double d; bool e; print(a); // null print(b); // null print(c); // null print(d); // null print(e); // null }  </description>
     </item>

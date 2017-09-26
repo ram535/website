@@ -2,10 +2,10 @@
 title = "Part02 entry point"
 +++
 
-`index.html` is the entry point of the whole program.
+**index.html** is the entry point of the whole program.
 We are going to add a textarea tag with these propierties id="editor", 80 columns width and autofocus.
 
-``` html
+{{< highlight html "linenos=inline,hl_lines=15" >}}
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,12 +23,12 @@ We are going to add a textarea tag with these propierties id="editor", 80 column
   <textarea  id="editor"  cols="80"  autofocus></textarea>
 </body>
 </html>
-```
+{{< /highlight >}}
 
 That's it. From here on the next parts of the tutorial we are just going to add functionalities based on what the user type on
-the `<textarea></textarea>` tag.
+the **`<textarea></textarea>`** tag.
 
-Run `pub serve` on the root of the project and go to `http://localhost:8080/` in your browser.
+Run **pub serve** on the root of the project and go to **`http://localhost:8080/`** in your browser.
 
 Result: [part02](https://ram535.github.io/text-editor-dart/part02/index.html).
 

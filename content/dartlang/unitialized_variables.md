@@ -1,5 +1,5 @@
 +++
-title = "Uninitialized variables"
+title = "Unitialized variables"
 +++
 
 Uninitialized variables have an initial value of null because everyting in dart is an object.

@@ -27,30 +27,22 @@ After running the command we get this files:
 
 Let's explain what this files do:
 
-- `index.html` is the entry point of our app from here we call the `main.dart` file.
-- `main.dart` this is the entry point of all the functionalities that we will add to the text editor.
-- `styless.css` is just a style cheat, nothing special here.
-- `favicon.ico` is just a favicon, nothing special here.
-- `pubspec.yaml` here are some information about our project that is use by the `pub` package manager
+- **index.html** is the entry point of our app from here we call the **main.dart** file.
+- **main.dart** this is the entry point of all the functionalities that we will add to the text editor.
+- **styless.css** is just a style cheat, nothing special here.
+- **favicon.ico** is just a favicon, nothing special here.
+- **pubspec.yaml** here are some information about our project that is use by the **pub** package manager
 such a the dependecies that we need for our app.
-- `README.md` here you can add general information about your program for the audience.
-- `LICENSE` here you add the license for your program.
-- `analysis_options.yaml` here you can add options for the analazer. The analazer performs static analysis and
+- **README.md** here you can add general information about your program for the audience.
+- **LICENSE** here you add the license for your program.
+- **analysis_options.yaml** here you can add options for the analazer. The analazer performs static analysis and
 allows you to find problems before executing a single line of code.
 
-To get all the dependecies run this command on the root of the project (where the pubspec.yaml is located):
+To get all the dependecies run **`pub get`** command on the root of the project (where the pubspec.yaml is located):
 
-``` bash
-pub get
-```
+To try the app run **`pub serve`** command on the root of the project:
 
-To try the app run this command on the root of the project:
-
-``` bash
-pub serve
-```
-
-Got to `http://localhost:8080/` in your browser and you will see this:
+Got to **`http://localhost:8080/`** in your browser and you will see this:
 
 ![image](../../../img/text-editor-dart-part01.jpg)
 

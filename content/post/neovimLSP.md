@@ -25,7 +25,7 @@ Since we already have Dart installed, we can install dart_language_server with t
 pub global activate dart_language_server
 ```
 
-Add the `.pub-cache/bin` in your path (.bashrc or .zshrc file) so the server can be run as `dart_language_server`.
+Add the **.pub-cache/bin** in your path (.bashrc or .zshrc file) so the server can be run as **dart_language_server**.
 Example:
 
 ``` bash
@@ -66,4 +66,4 @@ Open a dart file in neovim. Activate LanguageClient-neovim with this command:
 ```
 ![image](../../img/neovimLSP.png)
 
-You will notice that dart_language_server also gives us error checking, jump to definition functionalities.
+You will notice that **dart_language_server** also gives us error checking, jump to definition functionalities.

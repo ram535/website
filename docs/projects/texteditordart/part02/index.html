@@ -24,32 +24,32 @@
 </nav>
 
 <h1>Part02 entry point</h1>
-<p><code>index.html</code> is the entry point of the whole program.
+<p><strong>index.html</strong> is the entry point of the whole program.
 We are going to add a textarea tag with these propierties id=&ldquo;editor&rdquo;, 80 columns width and autofocus.</p>
 
-<pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;utf-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;title&gt;part02&lt;/title&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;
-    &lt;link rel=&quot;icon&quot; href=&quot;favicon.ico&quot;&gt;
-    &lt;script defer src=&quot;main.dart&quot; type=&quot;application/dart&quot;&gt;&lt;/script&gt;
-    &lt;script defer src=&quot;packages/browser/dart.js&quot;&gt;&lt;/script&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-  &lt;div id=&quot;output&quot;&gt;&lt;/div&gt;
-  &lt;textarea  id=&quot;editor&quot;  cols=&quot;80&quot;  autofocus&gt;&lt;/textarea&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;"> 1</span><span style="">&lt;!DOCTYPE html&gt;</span>
+<span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;"> 2</span>&lt;<span style="font-weight:bold">html</span>&gt;
+<span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;"> 3</span>&lt;<span style="font-weight:bold">head</span>&gt;
+<span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;"> 4</span>    &lt;<span style="font-weight:bold">meta</span> charset=<span style="font-style:italic">&#34;utf-8&#34;</span>&gt;
+<span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;"> 5</span>    &lt;<span style="font-weight:bold">meta</span> name=<span style="font-style:italic">&#34;viewport&#34;</span> content=<span style="font-style:italic">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
+<span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;"> 6</span>    &lt;<span style="font-weight:bold">title</span>&gt;part02&lt;/<span style="font-weight:bold">title</span>&gt;
+<span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;"> 7</span>    &lt;<span style="font-weight:bold">link</span> rel=<span style="font-style:italic">&#34;stylesheet&#34;</span> href=<span style="font-style:italic">&#34;styles.css&#34;</span>&gt;
+<span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;"> 8</span>    &lt;<span style="font-weight:bold">link</span> rel=<span style="font-style:italic">&#34;icon&#34;</span> href=<span style="font-style:italic">&#34;favicon.ico&#34;</span>&gt;
+<span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;"> 9</span>    &lt;<span style="font-weight:bold">script</span> defer src=<span style="font-style:italic">&#34;main.dart&#34;</span> type=<span style="font-style:italic">&#34;application/dart&#34;</span>&gt;&lt;/<span style="font-weight:bold">script</span>&gt;
+<span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;">10</span>    &lt;<span style="font-weight:bold">script</span> defer src=<span style="font-style:italic">&#34;packages/browser/dart.js&#34;</span>&gt;&lt;/<span style="font-weight:bold">script</span>&gt;
+<span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;">11</span>&lt;/<span style="font-weight:bold">head</span>&gt;
+<span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;">12</span>
+<span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;">13</span>&lt;<span style="font-weight:bold">body</span>&gt;
+<span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;">14</span>  &lt;<span style="font-weight:bold">div</span> id=<span style="font-style:italic">&#34;output&#34;</span>&gt;&lt;/<span style="font-weight:bold">div</span>&gt;
+<span style="background-color:#e5e5e5;display:block;width:100%"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;">15</span>  &lt;<span style="font-weight:bold">textarea</span>  id=<span style="font-style:italic">&#34;editor&#34;</span>  cols=<span style="font-style:italic">&#34;80&#34;</span>  autofocus&gt;&lt;/<span style="font-weight:bold">textarea</span>&gt;
+</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;">16</span>&lt;/<span style="font-weight:bold">body</span>&gt;
+<span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;">17</span>&lt;/<span style="font-weight:bold">html</span>&gt;</code></pre>
+</div>
 
 <p>That&rsquo;s it. From here on the next parts of the tutorial we are just going to add functionalities based on what the user type on
-the <code>&lt;textarea&gt;&lt;/textarea&gt;</code> tag.</p>
+the <strong><code>&lt;textarea&gt;&lt;/textarea&gt;</code></strong> tag.</p>
 
-<p>Run <code>pub serve</code> on the root of the project and go to <code>http://localhost:8080/</code> in your browser.</p>
+<p>Run <strong>pub serve</strong> on the root of the project and go to <strong><code>http://localhost:8080/</code></strong> in your browser.</p>
 
 <p>Result: <a href="https://ram535.github.io/text-editor-dart/part02/index.html">part02</a>.</p>
 
