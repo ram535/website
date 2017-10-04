@@ -24,7 +24,7 @@ Let's add the button tag in the **index.html** with an id of **btnClearText**.
 </html>
 {{< /highlight >}}
 
-Now let's connect this button **clearEditor()** function in the **main.dart** file.
+Now let's connect this button with **clearEditor()** function in the **main.dart** file.
 Everytime the clear button is click the **clearEditor()** function is call, then we assign an empty
 string to **theEditor.value** and finally we reuse the **saveDocument()** function to save to the **Local Storage**.
 

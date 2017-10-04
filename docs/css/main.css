@@ -147,8 +147,8 @@ strong {
 
 code {
     display: inline-block;
+    font-family: 'Roboto', sans-serif;
     color: #666a6c;
-    font-family: "range_mono";
     padding: 1px 8px;
 }
 pre {
