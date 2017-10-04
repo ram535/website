@@ -52,5 +52,15 @@ import &amp;#39;dart:html&amp;#39;; void main() { TextAreaElement theEditor = qu
 1import &amp;#39;dart:html&amp;#39;; 2import &amp;#39;dart:convert&amp;#39; show JSON; 3 4void main() { 5 TextAreaElement theEditor = querySelector(&amp;#34;#editor&amp;#34;); 6 theEditor 7 ..value = loadDocument() 8 ..onKeyUp.listen((_) =&amp;gt; saveDocument(theEditor)); 9} 10 11String loadDocument() { 12 String jsonString = window.</description>
     </item>
     
+    <item>
+      <title>Part05 Adding a clear button</title>
+      <link>https://ram535.github.io/website/projects/texteditordart/part05/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ram535.github.io/website/projects/texteditordart/part05/</guid>
+      <description>Let&amp;rsquo;s add the button tag in the index.html with an id of btnClearText.
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&amp;gt; &amp;lt;title&amp;gt;part05&amp;lt;/title&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;styles.css&amp;#34;&amp;gt; &amp;lt;link rel=&amp;#34;icon&amp;#34; href=&amp;#34;favicon.ico&amp;#34;&amp;gt; &amp;lt;script defer src=&amp;#34;main.dart&amp;#34; type=&amp;#34;application/dart&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script defer src=&amp;#34;packages/browser/dart.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;textarea id=&amp;#34;editor&amp;#34; cols=&amp;#34;80&amp;#34; autofocus&amp;gt;&amp;lt;/textarea&amp;gt; &amp;lt;button id=&amp;#34;btnClearText&amp;#34;&amp;gt;Clear&amp;lt;/button&amp;gt;  &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;  Now let&amp;rsquo;s connect this button clearEditor() function in the main.dart file. Everytime the clear button is click the clearEditor() function is call, then we assign an empty string to theEditor.</description>
+    </item>
+    
   </channel>
 </rss>

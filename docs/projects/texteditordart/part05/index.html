@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="https://ram535.github.io/website/css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="https://ram535.github.io/website/css/main.css"/>
+    
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Part05 Adding a clear button</title>
+</head>
+<body>
+
+<div class="container">
+<nav>
+        
+            <a title="Blog" href="/website/">Blog</a>
+        
+            <a title="Dartlang" href="/website/dartlang/">Dartlang</a>
+        
+            <a title="Projects" href="/website/projects/">Projects</a>
+        
+        <div class="social">
+<a href="https://github.com/ram535"><img class="icon-social" src="https://ram535.github.io/website/img/github.svg" alt="Github"/></a>
+<a href="https://twitter.com/ram232"><img class="icon-social" src="https://ram535.github.io/website/img/twitter.svg" alt="Twitter"/></a>
+        </div>
+</nav>
+
+
+<h1>Part05 Adding a clear button</h1>
+<p>Let&rsquo;s add the button tag in the <strong>index.html</strong> with an id of <strong>btnClearText</strong>.</p>
+
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="font-weight:bold">html</span>&gt;
+    &lt;<span style="font-weight:bold">head</span>&gt;
+        &lt;<span style="font-weight:bold">meta</span> charset=<span style="font-style:italic">&#34;utf-8&#34;</span>&gt;
+        &lt;<span style="font-weight:bold">meta</span> name=<span style="font-style:italic">&#34;viewport&#34;</span> content=<span style="font-style:italic">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
+        &lt;<span style="font-weight:bold">title</span>&gt;part05&lt;/<span style="font-weight:bold">title</span>&gt;
+        &lt;<span style="font-weight:bold">link</span> rel=<span style="font-style:italic">&#34;stylesheet&#34;</span> href=<span style="font-style:italic">&#34;styles.css&#34;</span>&gt;
+        &lt;<span style="font-weight:bold">link</span> rel=<span style="font-style:italic">&#34;icon&#34;</span> href=<span style="font-style:italic">&#34;favicon.ico&#34;</span>&gt;
+        &lt;<span style="font-weight:bold">script</span> defer src=<span style="font-style:italic">&#34;main.dart&#34;</span> type=<span style="font-style:italic">&#34;application/dart&#34;</span>&gt;&lt;/<span style="font-weight:bold">script</span>&gt;
+        &lt;<span style="font-weight:bold">script</span> defer src=<span style="font-style:italic">&#34;packages/browser/dart.js&#34;</span>&gt;&lt;/<span style="font-weight:bold">script</span>&gt;
+    &lt;/<span style="font-weight:bold">head</span>&gt;
+
+    &lt;<span style="font-weight:bold">body</span>&gt;
+        &lt;<span style="font-weight:bold">textarea</span> id=<span style="font-style:italic">&#34;editor&#34;</span> cols=<span style="font-style:italic">&#34;80&#34;</span> autofocus&gt;&lt;/<span style="font-weight:bold">textarea</span>&gt;
+<span style="background-color:#e5e5e5;display:block;width:100%">        &lt;<span style="font-weight:bold">button</span> id=<span style="font-style:italic">&#34;btnClearText&#34;</span>&gt;Clear&lt;/<span style="font-weight:bold">button</span>&gt;
+</span>    &lt;/<span style="font-weight:bold">body</span>&gt;
+&lt;/<span style="font-weight:bold">html</span>&gt;</code></pre>
+</div>
+
+<p>Now let&rsquo;s connect this button <strong>clearEditor()</strong> function in the <strong>main.dart</strong> file.
+Everytime the clear button is click the <strong>clearEditor()</strong> function is call, then we assign an empty
+string to <strong>theEditor.value</strong> and finally we reuse the <strong>saveDocument()</strong> function to save to the <strong>Local Storage</strong>.</p>
+
+<p><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="font-weight:bold">import</span> <span style="font-style:italic">&#39;dart:html&#39;</span>;
+<span style="font-weight:bold">import</span> <span style="font-style:italic">&#39;dart:convert&#39;</span> <span style="font-weight:bold">show</span> JSON;
+
+TextAreaElement theEditor = querySelector(<span style="font-style:italic">&#34;#editor&#34;</span>);
+
+<span style="">void</span> main() {
+  theEditor
+    ..value = loadDocument()
+    ..onKeyUp.listen((_) =&gt; saveDocument());
+
+<span style="background-color:#e5e5e5;display:block;width:100%">  ButtonElement btnClear = querySelector(<span style="font-style:italic">&#34;#btnClearText&#34;</span>);
+</span><span style="background-color:#e5e5e5;display:block;width:100%">  btnClear.onClick.listen((_) =&gt; clearEditor());
+</span>}
+
+<span style="">String</span> loadDocument() {
+  <span style="">String</span> jsonString = window.localStorage[<span style="font-style:italic">&#34;TextEditor&#34;</span>];
+  print(jsonString);
+  <span style="font-weight:bold">if</span> (jsonString != <span style="font-weight:bold">null</span> &amp;&amp; jsonString.length &gt; 0)
+    <span style="font-weight:bold">return</span> JSON.decode(jsonString);
+  <span style="font-weight:bold">else</span>
+    <span style="font-weight:bold">return</span> <span style="font-style:italic">&#34;&#34;</span>;
+}
+
+<span style="">void</span> saveDocument() {
+  window.localStorage[<span style="font-style:italic">&#34;TextEditor&#34;</span>] = JSON.encode(theEditor.value);
+}
+
+<span style="background-color:#e5e5e5;display:block;width:100%"><span style="">void</span> clearEditor() {
+</span><span style="background-color:#e5e5e5;display:block;width:100%">  theEditor.value = <span style="font-style:italic">&#34;&#34;</span>;
+</span><span style="background-color:#e5e5e5;display:block;width:100%">  saveDocument();
+</span><span style="background-color:#e5e5e5;display:block;width:100%">}</span></code></pre>
+</div></p>
+
+<p>Run <strong>pub serve</strong> on the root of the project and go to <strong><code>http://localhost:8080/</code></strong> in your browser.</p>
+
+<p>Result: <a href="https://ram535.github.io/text-editor-dart/part05/index.html">part05</a>.</p>
+
+<p>Check the <a href="https://github.com/ram535/text-editor-dart/tree/master/part05">source code</a>.</p>
+
+
+</div>
+</body>
+</html>
+
