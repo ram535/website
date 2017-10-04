@@ -31,5 +31,26 @@ stagehand web-simple  After running the command we get this files:
 1&amp;lt;!DOCTYPE html&amp;gt; 2&amp;lt;html&amp;gt; 3&amp;lt;head&amp;gt; 4 &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; 5 &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&amp;gt; 6 &amp;lt;title&amp;gt;part02&amp;lt;/title&amp;gt; 7 &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;styles.css&amp;#34;&amp;gt; 8 &amp;lt;link rel=&amp;#34;icon&amp;#34; href=&amp;#34;favicon.ico&amp;#34;&amp;gt; 9 &amp;lt;script defer src=&amp;#34;main.dart&amp;#34; type=&amp;#34;application/dart&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; 10 &amp;lt;script defer src=&amp;#34;packages/browser/dart.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; 11&amp;lt;/head&amp;gt; 12 13&amp;lt;body&amp;gt; 14 &amp;lt;div id=&amp;#34;output&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; 15 &amp;lt;textarea id=&amp;#34;editor&amp;#34; cols=&amp;#34;80&amp;#34; autofocus&amp;gt;&amp;lt;/textarea&amp;gt; 16&amp;lt;/body&amp;gt; 17&amp;lt;/html&amp;gt;  That&amp;rsquo;s it.</description>
     </item>
     
+    <item>
+      <title>Part03 selecting and modifying a tag by id</title>
+      <link>https://ram535.github.io/website/projects/texteditordart/part03/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ram535.github.io/website/projects/texteditordart/part03/</guid>
+      <description>Let&amp;rsquo;s create a variable that will connect to .
+1import &amp;#39;dart:html&amp;#39;; 2 3void main() { 4 querySelector(&amp;#39;#output&amp;#39;).text = &amp;#39;Your Dart app is running.&amp;#39;; 5 TextAreaElement theEditor = querySelector(&amp;#34;#editor&amp;#34;); 6 theEditor.value = &amp;#34;welcome to the dart text editor&amp;#34;; 7}  The dart:html package is part of the dart SDK and contains methods and properties that cover the DOM. That is why we are able to declare the variable theEditor of type TextAreaElement and use the method querySelector to connect it to the &amp;lt;textarea id=&amp;quot;editor&amp;quot; cols=&amp;quot;80&amp;quot; autofocus&amp;gt;&amp;lt;/textarea&amp;gt; element by id.</description>
+    </item>
+    
+    <item>
+      <title>Part04 saving the text in the Local Storage</title>
+      <link>https://ram535.github.io/website/projects/texteditordart/part04/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ram535.github.io/website/projects/texteditordart/part04/</guid>
+      <description>First let&amp;rsquo;s delete everything that we don&amp;rsquo;t need for our text editor in our main.dart file.
+import &amp;#39;dart:html&amp;#39;; void main() { TextAreaElement theEditor = querySelector(&amp;#34;#editor&amp;#34;); }  We are going to use Local Storage which is a build-in functionality of HTML5.
+1import &amp;#39;dart:html&amp;#39;; 2import &amp;#39;dart:convert&amp;#39; show JSON; 3 4void main() { 5 TextAreaElement theEditor = querySelector(&amp;#34;#editor&amp;#34;); 6 theEditor 7 ..value = loadDocument() 8 ..onKeyUp.listen((_) =&amp;gt; saveDocument(theEditor)); 9} 10 11String loadDocument() { 12 String jsonString = window.</description>
+    </item>
+    
   </channel>
 </rss>

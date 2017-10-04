@@ -45,6 +45,27 @@ stagehand web-simple  After running the command we get this files:
     </item>
     
     <item>
+      <title>Part03 selecting and modifying a tag by id</title>
+      <link>https://ram535.github.io/website/projects/texteditordart/part03/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ram535.github.io/website/projects/texteditordart/part03/</guid>
+      <description>Let&amp;rsquo;s create a variable that will connect to .
+1import &amp;#39;dart:html&amp;#39;; 2 3void main() { 4 querySelector(&amp;#39;#output&amp;#39;).text = &amp;#39;Your Dart app is running.&amp;#39;; 5 TextAreaElement theEditor = querySelector(&amp;#34;#editor&amp;#34;); 6 theEditor.value = &amp;#34;welcome to the dart text editor&amp;#34;; 7}  The dart:html package is part of the dart SDK and contains methods and properties that cover the DOM. That is why we are able to declare the variable theEditor of type TextAreaElement and use the method querySelector to connect it to the &amp;lt;textarea id=&amp;quot;editor&amp;quot; cols=&amp;quot;80&amp;quot; autofocus&amp;gt;&amp;lt;/textarea&amp;gt; element by id.</description>
+    </item>
+    
+    <item>
+      <title>Part04 saving the text in the Local Storage</title>
+      <link>https://ram535.github.io/website/projects/texteditordart/part04/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ram535.github.io/website/projects/texteditordart/part04/</guid>
+      <description>First let&amp;rsquo;s delete everything that we don&amp;rsquo;t need for our text editor in our main.dart file.
+import &amp;#39;dart:html&amp;#39;; void main() { TextAreaElement theEditor = querySelector(&amp;#34;#editor&amp;#34;); }  We are going to use Local Storage which is a build-in functionality of HTML5.
+1import &amp;#39;dart:html&amp;#39;; 2import &amp;#39;dart:convert&amp;#39; show JSON; 3 4void main() { 5 TextAreaElement theEditor = querySelector(&amp;#34;#editor&amp;#34;); 6 theEditor 7 ..value = loadDocument() 8 ..onKeyUp.listen((_) =&amp;gt; saveDocument(theEditor)); 9} 10 11String loadDocument() { 12 String jsonString = window.</description>
+    </item>
+    
+    <item>
       <title>Unitialized variables</title>
       <link>https://ram535.github.io/website/dartlang/unitialized_variables/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

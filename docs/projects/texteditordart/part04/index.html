@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="https://ram535.github.io/website/css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="https://ram535.github.io/website/css/main.css"/>
+    
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Part04 saving the text in the Local Storage</title>
+</head>
+<body>
+
+<div class="container">
+<nav>
+        
+            <a title="Blog" href="/website/">Blog</a>
+        
+            <a title="Dartlang" href="/website/dartlang/">Dartlang</a>
+        
+            <a title="Projects" href="/website/projects/">Projects</a>
+        
+        <div class="social">
+<a href="https://github.com/ram535"><img class="icon-social" src="https://ram535.github.io/website/img/github.svg" alt="Github"/></a>
+<a href="https://twitter.com/ram232"><img class="icon-social" src="https://ram535.github.io/website/img/twitter.svg" alt="Twitter"/></a>
+        </div>
+</nav>
+
+
+<h1>Part04 saving the text in the Local Storage</h1>
+<p>First let&rsquo;s delete everything that we don&rsquo;t need for our text editor in our <strong>main.dart</strong> file.</p>
+
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="font-weight:bold">import</span> <span style="font-style:italic">&#39;dart:html&#39;</span>;
+
+<span style="">void</span> main() {
+  TextAreaElement theEditor = querySelector(<span style="font-style:italic">&#34;#editor&#34;</span>);
+}</code></pre>
+</div>
+
+<p>We are going to use <strong>Local Storage</strong> which is a build-in functionality of HTML5.</p>
+
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;"> 1</span><span style="font-weight:bold">import</span> <span style="font-style:italic">&#39;dart:html&#39;</span>;
+<span style="background-color:#e5e5e5;display:block;width:100%"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;"> 2</span><span style="font-weight:bold">import</span> <span style="font-style:italic">&#39;dart:convert&#39;</span> <span style="font-weight:bold">show</span> JSON;
+</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;"> 3</span>
+<span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;"> 4</span><span style="">void</span> main() {
+<span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;"> 5</span>  TextAreaElement theEditor = querySelector(<span style="font-style:italic">&#34;#editor&#34;</span>);
+<span style="background-color:#e5e5e5;display:block;width:100%"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;"> 6</span>  theEditor
+</span><span style="background-color:#e5e5e5;display:block;width:100%"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;"> 7</span>    ..value = loadDocument()
+</span><span style="background-color:#e5e5e5;display:block;width:100%"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;"> 8</span>    ..onKeyUp.listen((_) =&gt; saveDocument(theEditor));
+</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;"> 9</span>}
+<span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;">10</span>
+<span style="background-color:#e5e5e5;display:block;width:100%"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;">11</span><span style="">String</span> loadDocument() {
+</span><span style="background-color:#e5e5e5;display:block;width:100%"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;">12</span>  <span style="">String</span> jsonString = window.localStorage[<span style="font-style:italic">&#34;TextEditor&#34;</span>];
+</span><span style="background-color:#e5e5e5;display:block;width:100%"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;">13</span>  <span style="font-weight:bold">if</span> (jsonString != <span style="font-weight:bold">null</span> &amp;&amp; jsonString.length &gt; 0)
+</span><span style="background-color:#e5e5e5;display:block;width:100%"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;">14</span>    <span style="font-weight:bold">return</span> JSON.decode(jsonString);
+</span><span style="background-color:#e5e5e5;display:block;width:100%"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;">15</span>  <span style="font-weight:bold">else</span>
+</span><span style="background-color:#e5e5e5;display:block;width:100%"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;">16</span>    <span style="font-weight:bold">return</span> <span style="font-style:italic">&#34;&#34;</span>;
+</span><span style="background-color:#e5e5e5;display:block;width:100%"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;">17</span>}
+</span><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;">18</span>
+<span style="background-color:#e5e5e5;display:block;width:100%"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;">19</span><span style="">void</span> saveDocument(TextAreaElement theEditor) {
+</span><span style="background-color:#e5e5e5;display:block;width:100%"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;">20</span>  window.localStorage[<span style="font-style:italic">&#34;TextEditor&#34;</span>] = JSON.encode(theEditor.value);
+</span><span style="background-color:#e5e5e5;display:block;width:100%"><span style="color:#7f7f7f;margin-right:0.4em;padding:00.4em00.4em;">21</span>}</span></code></pre>
+</div>
+
+<p>First we import the <strong>dart:convert</strong> library which we will use to transform the <strong>theEditor.value</strong> to json format (encode)
+since <strong>LocalStorage</strong> requires that its items to be json format and untransform it to a simple string (decode)for <strong>theEditor.value</strong>.
+With the keyword <strong>show</strong>, we just make it more clear that we are only want to use this property from the library and it makes more clear our intentions.</p>
+
+<pre><code class="language-dart">import 'dart:convert' show JSON;
+</code></pre>
+
+<p>After that we use cascate notation in the theEditor object which make more easy to read the code. <br>
+We call the <strong>loadDocument()</strong> function and assign its return value (a string) to the <strong>theEditor.value</strong>.<br>
+Then we call the <strong>onKeyup.listen</strong> method which will be listen to every key stroke we made until we finish the application (in this case closing the browser).<br>
+On every stroke <strong>onKeyup.listen</strong> will call an anonymous function <strong>(_)</strong> and this anonymous functon will call the <strong>saveDocument()</strong> function.<br>
+The <strong>onKeyup.listen()</strong> method returns a object of type <strong>KeyboardEvent</strong> but since we won&rsquo;t be using it, we descart it with the <strong>_</strong> in the anonymous function.</p>
+
+<pre><code class="language-dart">  theEditor
+    ..value = loadDocument()
+    ..onKeyUp.listen((_) =&gt; saveDocument(theEditor));
+</code></pre>
+
+<p>In the <strong>loadDocument()</strong> first we assign the content of &ldquo;Local Storage&rdquo; by passing a key value in this case <strong>TextEditor</strong> using the <strong>window.localStorage[]</strong> method.
+If <strong>window.localStorage[]</strong> does not find the key (TextEditor) it will asing <strong>null</strong> to <strong>jsonString</strong> variable.
+Then we check if <strong>jsonString</strong> is not equal to null and bigger its length is bigger than zero just to double check if there is a value in the <strong>Local Storage</strong>.
+If there is a value we use the <strong>JSON.decode()</strong> to transform the value from json format to just a simple string.
+And if there is not a value in the &ldquo;Local Storage&rdquo; we return and empty string.</p>
+
+<pre><code class="language-dart">String loadDocument() {
+  String jsonString = window.localStorage[&quot;TextEditor&quot;];
+  print(jsonString);
+  if (jsonString != null &amp;&amp; jsonString.length &gt; 0)
+    return JSON.decode(jsonString);
+  else
+    return &quot;&quot;;
+}
+</code></pre>
+
+<p>In the saveDocument() function we recieve the <strong>theEditor</strong> variable an assign its value to the <strong>Local Storage</strong> with the key <strong>TextEditor</strong>
+but first we transform it to json format using the <strong>JSON.encode()</strong> method.</p>
+
+<pre><code class="language-dart">void saveDocument(TextAreaElement theEditor) {
+  window.localStorage[&quot;TextEditor&quot;] = JSON.encode(theEditor.value);
+}
+
+</code></pre>
+
+<p>Run <strong>pub serve</strong> on the root of the project and go to <strong><code>http://localhost:8080/</code></strong> in your browser.</p>
+
+<p>Result: <a href="https://ram535.github.io/text-editor-dart/part04/index.html">part04</a>.</p>
+
+<p>Check the <a href="https://github.com/ram535/text-editor-dart/tree/master/part04">source code</a>.</p>
+
+
+</div>
+</body>
+</html>
+
