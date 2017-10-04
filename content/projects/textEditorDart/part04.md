@@ -85,6 +85,10 @@ void saveDocument(TextAreaElement theEditor) {
 
 ```
 
+You can go to Developer tools in Chrome and check the **Local Storage** like shown in the image.
+
+![image](../../../img/dev1.png)
+
 Run **pub serve** on the root of the project and go to **`http://localhost:8080/`** in your browser.
 
 Result: [part04](https://ram535.github.io/text-editor-dart/part04/index.html).
