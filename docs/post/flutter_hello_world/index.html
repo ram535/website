@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="https://ram535.github.io/website/css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="https://ram535.github.io/website/css/main.css"/>
+    
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Flutter Hello World</title>
+</head>
+<body>
+
+<div class="container">
+<nav>
+        
+            <a title="Blog" href="/website/">Blog</a>
+        
+            <a title="Dartlang" href="/website/dartlang/">Dartlang</a>
+        
+            <a title="Projects" href="/website/projects/">Projects</a>
+        
+        <div class="social">
+<a href="https://github.com/ram535"><img class="icon-social" src="https://ram535.github.io/website/img/github.svg" alt="Github"/></a>
+<a href="https://twitter.com/ram232"><img class="icon-social" src="https://ram535.github.io/website/img/twitter.svg" alt="Twitter"/></a>
+        </div>
+</nav>
+
+
+<h1>Flutter Hello World</h1>
+<small>Thu, Oct 5, 2017</small>
+<p>To install flutter follow this steps:</p>
+
+<ul>
+<li>clone the <a href="git clone -b alpha https://github.com/flutter/flutter.git">repo</a></li>
+<li>add the path on your machine (adjust the path that correspond to your machine)</li>
+</ul>
+
+<pre><code>export PATH=$HOME/projects/flutter/bin:$PATH
+</code></pre>
+
+<ul>
+<li>run <strong>flutter doctor</strong> to see if there are any dependencies you need to install to complete the setup</li>
+</ul>
+
+<p>Now let&rsquo;s create a flutter project</p>
+
+<pre><code>flutter create flutter_hello_world
+</code></pre>
+
+<p>We can use a simulator or a divice to test the demo app.
+For me is more easy to do it in actual device because is faster than using a simulator.
+Connect the device to your computer and go <strong>Settings&gt;About</strong> phone and tapping the Build number line seven times enable USB debugging.
+Let&rsquo;s check if our devices is detected by running this command:</p>
+
+<pre><code>flutter devices
+</code></pre>
+
+<p>Let&rsquo;s run the demo app to check that everything set up right.</p>
+
+<pre><code>cd myapp
+flutter run
+</code></pre>
+
+<p><img src="../../img/flutter-hello-world-demo.jpg" alt="image" /></p>
+
+<p>Go to <strong>lib/main.dart</strong> and modify the main funtion.</p>
+
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="font-weight:bold">import</span> <span style="font-style:italic">&#39;package:flutter/material.dart&#39;</span>;
+<span style="">void</span> main() {
+  runApp(<span style="font-weight:bold">const</span> Center(
+      child: <span style="font-weight:bold">const</span> Text(
+    <span style="font-style:italic">&#39;Hello, world!&#39;</span>,
+    textDirection: TextDirection.ltr,
+  )));
+}</code></pre>
+</div>
+
+
+</div>
+</body>
+</html>
+

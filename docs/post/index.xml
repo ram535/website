@@ -6,10 +6,21 @@
     <description>Recent content in Posts on ram535.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Apr 2017 12:33:39 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 05 Oct 2017 14:46:50 +0200</lastBuildDate>
     
 	<atom:link href="https://ram535.github.io/website/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Flutter Hello World</title>
+      <link>https://ram535.github.io/website/post/flutter_hello_world/</link>
+      <pubDate>Thu, 05 Oct 2017 14:46:50 +0200</pubDate>
+      
+      <guid>https://ram535.github.io/website/post/flutter_hello_world/</guid>
+      <description>To install flutter follow this steps:
+ clone the repo add the path on your machine (adjust the path that correspond to your machine)  export PATH=$HOME/projects/flutter/bin:$PATH   run flutter doctor to see if there are any dependencies you need to install to complete the setup  Now let&amp;rsquo;s create a flutter project
+flutter create flutter_hello_world  We can use a simulator or a divice to test the demo app.</description>
+    </item>
     
     <item>
       <title>Dart Completion in Neovim using Language Server Protocol</title>
