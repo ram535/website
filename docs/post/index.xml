@@ -6,10 +6,21 @@
     <description>Recent content in Posts on ram535.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Oct 2017 14:46:50 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 09 Oct 2017 11:55:01 +0200</lastBuildDate>
     
 	<atom:link href="https://ram535.github.io/website/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Setting up an Angular Dart Project</title>
+      <link>https://ram535.github.io/website/post/setting_angular_dart/</link>
+      <pubDate>Mon, 09 Oct 2017 11:55:01 +0200</pubDate>
+      
+      <guid>https://ram535.github.io/website/post/setting_angular_dart/</guid>
+      <description>First we are going to install stagehand program using the pub package manager.
+pub global active stagehand  Pub’s global option allows you to run Dart scripts from the command line when you are not currently inside a package. Now run pub global list to see all the install global package.
+stagehand 1.1.6  In this case there is only one packages install. stagehand generates the scaffolding of the project you choose.</description>
+    </item>
     
     <item>
       <title>Flutter Hello World</title>

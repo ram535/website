@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="https://ram535.github.io/website/css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="https://ram535.github.io/website/css/main.css"/>
+    
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Setting up an Angular Dart Project</title>
+</head>
+<body>
+
+<div class="container">
+<nav>
+        
+            <a title="Blog" href="/website/">Blog</a>
+        
+            <a title="Dartlang" href="/website/dartlang/">Dartlang</a>
+        
+            <a title="Projects" href="/website/projects/">Projects</a>
+        
+        <div class="social">
+<a href="https://github.com/ram535"><img class="icon-social" src="https://ram535.github.io/website/img/github.svg" alt="Github"/></a>
+<a href="https://twitter.com/ram232"><img class="icon-social" src="https://ram535.github.io/website/img/twitter.svg" alt="Twitter"/></a>
+        </div>
+</nav>
+
+
+<h1>Setting up an Angular Dart Project</h1>
+<small>Mon, Oct 9, 2017</small>
+<p>First we are going to install <strong>stagehand</strong> program using the <strong>pub</strong> package manager.</p>
+
+<pre><code>pub global active stagehand
+</code></pre>
+
+<p><strong>Pub</strong>’s global option allows you to run Dart scripts from the command line when you are not currently inside a package.
+Now run <strong>pub global list</strong> to see all the install global package.</p>
+
+<pre><code>stagehand 1.1.6
+</code></pre>
+
+<p>In this case there is only one packages install. <strong>stagehand</strong> generates the scaffolding of the project you choose.</p>
+
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart">$ ~ stagehand
+Stagehand will generate the given application type into the current directory.
+
+usage: stagehand &lt;generator-name&gt;
+    --[no-]analytics    Opt out of anonymous usage and crash reporting.
+-h, --help              Help!
+    --version           Display the version <span style="font-weight:bold">for</span> stagehand.
+    --author            The author name to use <span style="font-weight:bold">for</span> file headers.
+                        (defaults to <span style="font-style:italic">&#34;&lt;your name&gt;&#34;</span>)
+
+Available generators:
+  console-full   - A command-line application sample.
+  package-simple - A starting point <span style="font-weight:bold">for</span> Dart libraries or applications.
+  server-shelf   - A web server built using the shelf package.
+  web-angular    - A web app <span style="font-weight:bold">with</span> material design components.
+  web-simple     - A web app that uses only core Dart libraries.
+  web-stagexl    - A starting point <span style="font-weight:bold">for</span> 2D animation and games.</code></pre>
+</div>
+
+<p>Let&rsquo;s create the scaffolding for a angular app by running this command.</p>
+
+<pre><code>stagehand web-angular
+</code></pre>
+
+<p>This will generate the next directories and files for an angular dart app.</p>
+
+<pre><code>.
+├── analysis_options.yaml
+├── CHANGELOG.md
+├── lib
+│   ├── app_component.css
+│   ├── app_component.dart
+│   ├── app_component.html
+│   └── src
+│       └── todo_list
+│           ├── todo_list_component.css
+│           ├── todo_list_component.dart
+│           ├── todo_list_component.html
+│           └── todo_list_service.dart
+├── LICENSE
+├── pubspec.yaml
+├── README.md
+├── test
+│   └── app_test.dart
+└── web
+    ├── favicon.png
+    ├── index.html
+    ├── main.dart
+    └── styles.css
+</code></pre>
+
+<p>Now run these commands to get all the dependecies and start a server:</p>
+
+<pre><code>pub get
+pub serve
+</code></pre>
+
+<p>Go to port <strong><code>http://localhost:8080</code></strong> and you will see this todo app.</p>
+
+<p><img src="../../img/angular-hello-world.jpg" alt="image" /></p>
+
+
+</div>
+</body>
+</html>
+

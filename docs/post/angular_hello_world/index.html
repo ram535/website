@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="https://ram535.github.io/website/css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="https://ram535.github.io/website/css/main.css"/>
+    
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Angular hello world</title>
+</head>
+<body>
+
+<div class="container">
+<nav>
+        
+            <a title="Blog" href="/website/">Blog</a>
+        
+            <a title="Dartlang" href="/website/dartlang/">Dartlang</a>
+        
+            <a title="Projects" href="/website/projects/">Projects</a>
+        
+        <div class="social">
+<a href="https://github.com/ram535"><img class="icon-social" src="https://ram535.github.io/website/img/github.svg" alt="Github"/></a>
+<a href="https://twitter.com/ram232"><img class="icon-social" src="https://ram535.github.io/website/img/twitter.svg" alt="Twitter"/></a>
+        </div>
+</nav>
+
+
+<h1>Angular hello world</h1>
+<small>Mon, Oct 9, 2017</small>
+<p>In this post we are going to create a simple web app that display hello world to
+get familiar with the initial set up of angular dart app.</p>
+
+<p>First we are going to install <strong>stagehand</strong> program using the <strong>pub</strong> package manager.
+To update a global package we use the same command.</p>
+
+<pre><code>pub global active stagehand
+
+</code></pre>
+
+<p><strong>Pub</strong>’s global option allows you to run Dart scripts from the command line when you are not currently inside a package.
+Now run <strong>pub global list</strong> to see all the install global package.</p>
+
+<pre><code>stagehand 1.1.6
+
+</code></pre>
+
+<p>In this case there is only one packages install. <strong>stagehand</strong> generates the scaffolding of the project you choose.</p>
+
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="">╭─</span> ~
+<span style="">╰─</span> stagehand
+Stagehand will generate the given application type into the current directory.
+
+usage: stagehand &lt;generator-name&gt;
+    --[no-]analytics    Opt out of anonymous usage and crash reporting.
+-h, --help              Help!
+    --version           Display the version <span style="font-weight:bold">for</span> stagehand.
+    --author            The author name to use <span style="font-weight:bold">for</span> file headers.
+                        (defaults to <span style="font-style:italic">&#34;&lt;your name&gt;&#34;</span>)
+
+Available generators:
+  console-full   - A command-line application sample.
+  package-simple - A starting point <span style="font-weight:bold">for</span> Dart libraries or applications.
+  server-shelf   - A web server built using the shelf package.
+  web-angular    - A web app <span style="font-weight:bold">with</span> material design components.
+  web-simple     - A web app that uses only core Dart libraries.
+  web-stagexl    - A starting point <span style="font-weight:bold">for</span> 2D animation and games.</code></pre>
+</div>
+
+
+</div>
+</body>
+</html>
+
