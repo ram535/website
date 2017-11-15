@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link type="text/css" rel="stylesheet" href="https://ram535.github.io/website/css/reset.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="https://ram535.github.io/website/css/main.css"/>
-    
 
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -49,45 +48,39 @@
 
 <p>Since we already have Dart installed, we can install dart_language_server with this command:</p>
 
-<pre><code class="language-dart">pub global activate dart_language_server
-</code></pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">pub global activate dart_language_server</code></pre></div>
 
 <p>Add the <strong>.pub-cache/bin</strong> in your path (.bashrc or .zshrc file) so the server can be run as <strong>dart_language_server</strong>.
 Example:</p>
 
-<pre><code class="language-bash">export PATH=&quot;$PATH&quot;:/home/&lt;your-user-name&gt;/.pub-cache/bin
-</code></pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">export PATH<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$PATH<span style="color:#e6db74">&#34;</span>:/home/&lt;your-user-name&gt;/.pub-cache/bin</code></pre></div>
 
 <h2 id="step-2-install-languageclient-neovim">Step 2. Install LanguageClient-neovim</h2>
 
 <p>You can use any plugin manager available in neovim in this case we will use <a href="https://github.com/junegunn/vim-plug">vim-plug</a>.</p>
 
-<pre><code class="language-vim">Plug 'autozimu/LanguageClient-neovim', { 'do': ':UpdateRemotePlugins' }
-</code></pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;autozimu/LanguageClient-neovim&#39;</span>, { <span style="color:#e6db74">&#39;do&#39;</span>: <span style="color:#e6db74">&#39;:UpdateRemotePlugins&#39;</span> }</code></pre></div>
 
 <p>Add this configuration to your <strong>init.vim</strong>:</p>
 
-<pre><code class="language-vim">&quot; Required for operations modifying multiple buffers like rename.
-set hidden
-
-let g:LanguageClient_serverCommands = {
-    \ 'dart': ['dart_language_server'],
-    \ }
-</code></pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#75715e">&#34; Required for operations modifying multiple buffers like rename.</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">set</span> <span style="color:#a6e22e">hidden</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">g</span>:<span style="color:#a6e22e">LanguageClient_serverCommands</span> = {<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>    \ <span style="color:#e6db74">&#39;dart&#39;</span>: [<span style="color:#e6db74">&#39;dart_language_server&#39;</span>],<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>    \ }</code></pre></div>
 
 <h2 id="step-3-install-nvim-completion-manager">Step 3. Install nvim-completion-manager</h2>
 
 <p>Again we are using vim-plug to install this plugin.</p>
 
-<pre><code class="language-vim">Plug 'roxma/nvim-completion-manager'
-</code></pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;roxma/nvim-completion-manager&#39;</span></code></pre></div>
 
 <h2 id="step-4-have-fun">Step 4. Have fun</h2>
 
 <p>Open a dart file in neovim. Activate LanguageClient-neovim with this command:</p>
 
-<pre><code class="language-vim">:LanguageClientStart
-</code></pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">LanguageClientStart</span></code></pre></div>
 
 <p><img src="../../img/neovimLSP.png" alt="image" /></p>
 

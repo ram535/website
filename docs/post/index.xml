@@ -18,8 +18,8 @@
       
       <guid>https://ram535.github.io/website/post/setting_angular_dart/</guid>
       <description>First we are going to install stagehand program using the pub package manager.
-pub global active stagehand  Pub’s global option allows you to run Dart scripts from the command line when you are not currently inside a package. Now run pub global list to see all the install global package.
-stagehand 1.1.6  In this case there is only one packages install. stagehand generates the scaffolding of the project you choose.</description>
+pub global active stagehand Pub’s global option allows you to run Dart scripts from the command line when you are not currently inside a package. Now run pub global list to see all the install global package.
+stagehand 1.1.6 In this case there is only one packages install. stagehand generates the scaffolding of the project you choose for example a simple web app, an angular app, etc.</description>
     </item>
     
     <item>
@@ -29,8 +29,8 @@ stagehand 1.1.6  In this case there is only one packages install. stagehand gene
       
       <guid>https://ram535.github.io/website/post/flutter_hello_world/</guid>
       <description>To install flutter follow this steps:
- clone the repo add the path on your machine (adjust the path that correspond to your machine)  export PATH=$HOME/projects/flutter/bin:$PATH   run flutter doctor to see if there are any dependencies you need to install to complete the setup  Now let&amp;rsquo;s create a flutter project
-flutter create flutter_hello_world  We can use a simulator or a divice to test the demo app.</description>
+ clone the repo add the path on your machine (adjust the path that correspond to your machine)  export PATH=$HOME/projects/flutter/bin:$PATH  run flutter doctor to see if there are any dependencies you need to install to complete the setup  Now let&amp;rsquo;s create a flutter project
+flutter create flutter_hello_world We can use a simulator or a divice to test the demo app. For me is more easy to do it in actual device because is faster than using a simulator.</description>
     </item>
     
     <item>
@@ -42,7 +42,7 @@ flutter create flutter_hello_world  We can use a simulator or a divice to test t
       <description>In this short and simple tutorial we will add Dart completion to Neovim using Language Server Protocol.
 First of all I will suppose that you already have install Neovim and Dart in your machine.
 List of programs that we will need:  dart_language_server LanguageClient-neovim (Neovim Plugin) nvim-completion-manager (Neovim Plugin)  Step 1. Install dart_language_server Since we already have Dart installed, we can install dart_language_server with this command:
-pub global activate dart_language_server  Add the .</description>
+pub global activate dart_language_server Add the .</description>
     </item>
     
   </channel>

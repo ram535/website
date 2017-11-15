@@ -21,49 +21,51 @@ First of all I will suppose that you already have install [Neovim](https://githu
 
 Since we already have Dart installed, we can install dart_language_server with this command:
 
-``` dart
+{{< highlight shell >}}
 pub global activate dart_language_server
-```
+{{< /highlight >}}
 
 Add the **.pub-cache/bin** in your path (.bashrc or .zshrc file) so the server can be run as **dart_language_server**.
 Example:
 
-``` bash
+{{< highlight shell >}}
 export PATH="$PATH":/home/<your-user-name>/.pub-cache/bin
-```
+{{< /highlight >}}
 
 ## Step 2. Install LanguageClient-neovim
 
 You can use any plugin manager available in neovim in this case we will use [vim-plug](https://github.com/junegunn/vim-plug).
 
-``` vim
+{{< highlight vim >}}
 Plug 'autozimu/LanguageClient-neovim', { 'do': ':UpdateRemotePlugins' }
-```
+{{< /highlight >}}
 
 Add this configuration to your **init.vim**:
 
-``` vim
+{{< highlight vim >}}
 " Required for operations modifying multiple buffers like rename.
 set hidden
 
 let g:LanguageClient_serverCommands = {
     \ 'dart': ['dart_language_server'],
     \ }
-```
+{{< /highlight >}}
+
 ## Step 3. Install nvim-completion-manager
 
 Again we are using vim-plug to install this plugin.
 
-``` vim
+{{< highlight vim >}}
 Plug 'roxma/nvim-completion-manager'
-```
+{{< /highlight >}}
 
 ## Step 4. Have fun
 Open a dart file in neovim. Activate LanguageClient-neovim with this command:
 
-``` vim
+{{< highlight vim >}}
 :LanguageClientStart
-```
+{{< /highlight >}}
+
 ![image](../../img/neovimLSP.png)
 
 You will notice that **dart_language_server** also gives us error checking, jump to definition functionalities.

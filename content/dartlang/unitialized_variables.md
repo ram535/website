@@ -4,7 +4,7 @@ title = "Unitialized variables"
 
 Uninitialized variables have an initial value of null because everyting in dart is an object.
 
-``` dart
+{{< highlight dart >}}
   void main() {
     var a;
     num b;
@@ -18,4 +18,4 @@ Uninitialized variables have an initial value of null because everyting in dart 
     print(d); // null
     print(e); // null
   }
-```
+{{< /highlight >}}

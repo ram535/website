@@ -42,9 +42,9 @@ First we import the **dart:convert** library which we will use to transform the 
 since **LocalStorage** requires that its items to be json format and untransform it to a simple string (decode)for **theEditor.value**.
 With the keyword **show**, we just make it more clear that we are only want to use this property from the library and it makes more clear our intentions.
 
-``` dart
+{{< highlight dart >}}
 import 'dart:convert' show JSON;
-```
+{{< /highlight >}}
 
 After that we use cascate notation in the theEditor object which make more easy to read the code. <br>
 We call the **loadDocument()** function and assign its return value (a string) to the **theEditor.value**.<br>
@@ -52,11 +52,11 @@ Then we call the **onKeyup.listen** method which will be listen to every key str
 On every stroke **onKeyup.listen** will call an anonymous function **(_)** and this anonymous functon will call the **saveDocument()** function.<br>
 The **onKeyup.listen()** method returns a object of type **KeyboardEvent** but since we won't be using it, we descart it with the **_** in the anonymous function.
 
-``` dart
-  theEditor
-    ..value = loadDocument()
-    ..onKeyUp.listen((_) => saveDocument(theEditor));
-```
+{{< highlight dart >}}
+theEditor
+  ..value = loadDocument()
+  ..onKeyUp.listen((_) => saveDocument(theEditor));
+{{< /highlight >}}
 
 In the **loadDocument()** first we assign the content of "Local Storage" by passing a key value in this case **TextEditor** using the **window.localStorage[]** method.
 If **window.localStorage[]** does not find the key (TextEditor) it will asing **null** to **jsonString** variable.
@@ -64,7 +64,7 @@ Then we check if **jsonString** is not equal to null and bigger its length is bi
 If there is a value we use the **JSON.decode()** to transform the value from json format to just a simple string.
 And if there is not a value in the "Local Storage" we return and empty string.
 
-``` dart
+{{< highlight dart >}}
 String loadDocument() {
   String jsonString = window.localStorage["TextEditor"];
   print(jsonString);
@@ -73,17 +73,16 @@ String loadDocument() {
   else
     return "";
 }
-```
+{{< /highlight >}}
 
 In the saveDocument() function we recieve the **theEditor** variable an assign its value to the **Local Storage** with the key **TextEditor**
 but first we transform it to json format using the **JSON.encode()** method.
 
-``` dart
+{{< highlight dart >}}
 void saveDocument(TextAreaElement theEditor) {
   window.localStorage["TextEditor"] = JSON.encode(theEditor.value);
 }
-
-```
+{{< /highlight >}}
 
 You can go to Developer tools in Chrome and check the **Local Storage** like shown in the image.
 

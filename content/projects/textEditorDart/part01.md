@@ -5,13 +5,13 @@ title = "Part01 set up"
 We are going to start really simple. Let's create the files that we will need to start writing our program usig
 the [stagehand](http://stagehand.pub/) program that will generate the initial files necesary to start writing our app.
 
-``` bash
+{{< highlight shell >}}
 stagehand web-simple
-```
+{{< /highlight >}}
 
 After running the command we get this files:
 
-```
+{{< highlight shell >}}
 .
 ├── analysis_options.yaml
 ├── CHANGELOG.md
@@ -23,7 +23,7 @@ After running the command we get this files:
     ├── index.html
     ├── main.dart
     └── styles.css
-```
+{{< /highlight >}}
 
 Let's explain what this files do:
 

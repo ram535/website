@@ -5,8 +5,8 @@ html {
 
 /* @font-face is a css rule which allows you to download a particular font from your server to render a webpage if the user hasn't got that font installed.  */
 @font-face {
-    font-family: 'Roboto';
-    src: local(Roboto Regular), url("../fonts/roboto/Roboto-Regular.woff2") format("woff2"), url("../fonts/roboto/Roboto-Regular.woff") format("woff");
+    font-family: 'Knack';
+    src: local("Knack Nerd Font"),url("../fonts/Knack.ttf") format("ttf");
     font-weight: 400;
 }
 
@@ -147,7 +147,7 @@ strong {
 
 code {
     display: inline-block;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Knack', sans-serif;
     color: #666a6c;
     padding: 1px 8px;
 }

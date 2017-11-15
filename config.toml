@@ -4,7 +4,6 @@ publishDir = "docs"
 languageCode = "en-us"
 title = "ram535.github.io"
 MetaDataFormat = "toml"
-PygmentsStyle = "bw"
 
 [[menu.main]]
     name = "Blog"

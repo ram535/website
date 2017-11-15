@@ -18,8 +18,8 @@
       
       <guid>https://ram535.github.io/website/post/setting_angular_dart/</guid>
       <description>First we are going to install stagehand program using the pub package manager.
-pub global active stagehand  Pub’s global option allows you to run Dart scripts from the command line when you are not currently inside a package. Now run pub global list to see all the install global package.
-stagehand 1.1.6  In this case there is only one packages install. stagehand generates the scaffolding of the project you choose.</description>
+pub global active stagehand Pub’s global option allows you to run Dart scripts from the command line when you are not currently inside a package. Now run pub global list to see all the install global package.
+stagehand 1.1.6 In this case there is only one packages install. stagehand generates the scaffolding of the project you choose for example a simple web app, an angular app, etc.</description>
     </item>
     
     <item>
@@ -29,8 +29,8 @@ stagehand 1.1.6  In this case there is only one packages install. stagehand gene
       
       <guid>https://ram535.github.io/website/post/flutter_hello_world/</guid>
       <description>To install flutter follow this steps:
- clone the repo add the path on your machine (adjust the path that correspond to your machine)  export PATH=$HOME/projects/flutter/bin:$PATH   run flutter doctor to see if there are any dependencies you need to install to complete the setup  Now let&amp;rsquo;s create a flutter project
-flutter create flutter_hello_world  We can use a simulator or a divice to test the demo app.</description>
+ clone the repo add the path on your machine (adjust the path that correspond to your machine)  export PATH=$HOME/projects/flutter/bin:$PATH  run flutter doctor to see if there are any dependencies you need to install to complete the setup  Now let&amp;rsquo;s create a flutter project
+flutter create flutter_hello_world We can use a simulator or a divice to test the demo app. For me is more easy to do it in actual device because is faster than using a simulator.</description>
     </item>
     
     <item>
@@ -42,7 +42,7 @@ flutter create flutter_hello_world  We can use a simulator or a divice to test t
       <description>In this short and simple tutorial we will add Dart completion to Neovim using Language Server Protocol.
 First of all I will suppose that you already have install Neovim and Dart in your machine.
 List of programs that we will need:  dart_language_server LanguageClient-neovim (Neovim Plugin) nvim-completion-manager (Neovim Plugin)  Step 1. Install dart_language_server Since we already have Dart installed, we can install dart_language_server with this command:
-pub global activate dart_language_server  Add the .</description>
+pub global activate dart_language_server Add the .</description>
     </item>
     
     <item>
@@ -52,8 +52,8 @@ pub global activate dart_language_server  Add the .</description>
       
       <guid>https://ram535.github.io/website/projects/texteditordart/part01/</guid>
       <description>We are going to start really simple. Let&amp;rsquo;s create the files that we will need to start writing our program usig the stagehand program that will generate the initial files necesary to start writing our app.
-stagehand web-simple  After running the command we get this files:
-. ├── analysis_options.yaml ├── CHANGELOG.md ├── LICENSE ├── pubspec.yaml ├── README.md └── web ├── favicon.ico ├── index.html ├── main.dart └── styles.css  Let&amp;rsquo;s explain what this files do:</description>
+stagehand web-simple After running the command we get this files:
+. ├── analysis_options.yaml ├── CHANGELOG.md ├── LICENSE ├── pubspec.yaml ├── README.md └── web ├── favicon.ico ├── index.html ├── main.dart └── styles.css Let&amp;rsquo;s explain what this files do:</description>
     </item>
     
     <item>
@@ -63,7 +63,7 @@ stagehand web-simple  After running the command we get this files:
       
       <guid>https://ram535.github.io/website/projects/texteditordart/part02/</guid>
       <description>index.html is the entry point of the whole program. We are going to add a textarea tag with these propierties id=&amp;ldquo;editor&amp;rdquo;, 80 columns width and autofocus.
-1&amp;lt;!DOCTYPE html&amp;gt; 2&amp;lt;html&amp;gt; 3&amp;lt;head&amp;gt; 4 &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; 5 &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&amp;gt; 6 &amp;lt;title&amp;gt;part02&amp;lt;/title&amp;gt; 7 &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;styles.css&amp;#34;&amp;gt; 8 &amp;lt;link rel=&amp;#34;icon&amp;#34; href=&amp;#34;favicon.ico&amp;#34;&amp;gt; 9 &amp;lt;script defer src=&amp;#34;main.dart&amp;#34; type=&amp;#34;application/dart&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; 10 &amp;lt;script defer src=&amp;#34;packages/browser/dart.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; 11&amp;lt;/head&amp;gt; 12 13&amp;lt;body&amp;gt; 14 &amp;lt;div id=&amp;#34;output&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; 15 &amp;lt;textarea id=&amp;#34;editor&amp;#34; cols=&amp;#34;80&amp;#34; autofocus&amp;gt;&amp;lt;/textarea&amp;gt; 16&amp;lt;/body&amp;gt; 17&amp;lt;/html&amp;gt;  That&amp;rsquo;s it.</description>
+1&amp;lt;!DOCTYPE html&amp;gt; 2&amp;lt;html&amp;gt; 3&amp;lt;head&amp;gt; 4 &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; 5 &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&amp;gt; 6 &amp;lt;title&amp;gt;part02&amp;lt;/title&amp;gt; 7 &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;styles.css&amp;#34;&amp;gt; 8 &amp;lt;link rel=&amp;#34;icon&amp;#34; href=&amp;#34;favicon.ico&amp;#34;&amp;gt; 9 &amp;lt;script defer src=&amp;#34;main.dart&amp;#34; type=&amp;#34;application/dart&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; 10 &amp;lt;script defer src=&amp;#34;packages/browser/dart.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; 11&amp;lt;/head&amp;gt; 12 13&amp;lt;body&amp;gt; 14 &amp;lt;div id=&amp;#34;output&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; 15 &amp;lt;textarea id=&amp;#34;editor&amp;#34; cols=&amp;#34;80&amp;#34; autofocus&amp;gt;&amp;lt;/textarea&amp;gt; 16&amp;lt;/body&amp;gt; 17&amp;lt;/html&amp;gt; That&amp;rsquo;s it.</description>
     </item>
     
     <item>
@@ -73,7 +73,7 @@ stagehand web-simple  After running the command we get this files:
       
       <guid>https://ram535.github.io/website/projects/texteditordart/part03/</guid>
       <description>Let&amp;rsquo;s create a variable that will connect to .
-1import &amp;#39;dart:html&amp;#39;; 2 3void main() { 4 querySelector(&amp;#39;#output&amp;#39;).text = &amp;#39;Your Dart app is running.&amp;#39;; 5 TextAreaElement theEditor = querySelector(&amp;#34;#editor&amp;#34;); 6 theEditor.value = &amp;#34;welcome to the dart text editor&amp;#34;; 7}  The dart:html package is part of the dart SDK and contains methods and properties that cover the DOM. That is why we are able to declare the variable theEditor of type TextAreaElement and use the method querySelector to connect it to the &amp;lt;textarea id=&amp;quot;editor&amp;quot; cols=&amp;quot;80&amp;quot; autofocus&amp;gt;&amp;lt;/textarea&amp;gt; element by id.</description>
+1import &amp;#39;dart:html&amp;#39;; 2 3void main() { 4 querySelector(&amp;#39;#output&amp;#39;).text = &amp;#39;Your Dart app is running.&amp;#39;; 5 TextAreaElement theEditor = querySelector(&amp;#34;#editor&amp;#34;); 6 theEditor.value = &amp;#34;welcome to the dart text editor&amp;#34;; 7} The dart:html package is part of the dart SDK and contains methods and properties that cover the DOM. That is why we are able to declare the variable theEditor of type TextAreaElement and use the method querySelector to connect it to the &amp;lt;textarea id=&amp;quot;editor&amp;quot; cols=&amp;quot;80&amp;quot; autofocus&amp;gt;&amp;lt;/textarea&amp;gt; element by id.</description>
     </item>
     
     <item>
@@ -83,7 +83,7 @@ stagehand web-simple  After running the command we get this files:
       
       <guid>https://ram535.github.io/website/projects/texteditordart/part04/</guid>
       <description>First let&amp;rsquo;s delete everything that we don&amp;rsquo;t need for our text editor in our main.dart file.
-import &amp;#39;dart:html&amp;#39;; void main() { TextAreaElement theEditor = querySelector(&amp;#34;#editor&amp;#34;); }  We are going to use Local Storage which is a build-in functionality of HTML5.
+import &amp;#39;dart:html&amp;#39;; void main() { TextAreaElement theEditor = querySelector(&amp;#34;#editor&amp;#34;); } We are going to use Local Storage which is a build-in functionality of HTML5.
 1import &amp;#39;dart:html&amp;#39;; 2import &amp;#39;dart:convert&amp;#39; show JSON; 3 4void main() { 5 TextAreaElement theEditor = querySelector(&amp;#34;#editor&amp;#34;); 6 theEditor 7 ..value = loadDocument() 8 ..onKeyUp.listen((_) =&amp;gt; saveDocument(theEditor)); 9} 10 11String loadDocument() { 12 String jsonString = window.</description>
     </item>
     
@@ -94,7 +94,7 @@ import &amp;#39;dart:html&amp;#39;; void main() { TextAreaElement theEditor = qu
       
       <guid>https://ram535.github.io/website/projects/texteditordart/part05/</guid>
       <description>Let&amp;rsquo;s add the button tag in the index.html with an id of btnClearText.
-&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&amp;gt; &amp;lt;title&amp;gt;part05&amp;lt;/title&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;styles.css&amp;#34;&amp;gt; &amp;lt;link rel=&amp;#34;icon&amp;#34; href=&amp;#34;favicon.ico&amp;#34;&amp;gt; &amp;lt;script defer src=&amp;#34;main.dart&amp;#34; type=&amp;#34;application/dart&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script defer src=&amp;#34;packages/browser/dart.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;textarea id=&amp;#34;editor&amp;#34; cols=&amp;#34;80&amp;#34; autofocus&amp;gt;&amp;lt;/textarea&amp;gt; &amp;lt;button id=&amp;#34;btnClearText&amp;#34;&amp;gt;Clear&amp;lt;/button&amp;gt;  &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;  Now let&amp;rsquo;s connect this button with clearEditor() function in the main.dart file. Everytime the clear button is click the clearEditor() function is call, then we assign an empty string to theEditor.</description>
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&amp;gt; &amp;lt;title&amp;gt;part05&amp;lt;/title&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;styles.css&amp;#34;&amp;gt; &amp;lt;link rel=&amp;#34;icon&amp;#34; href=&amp;#34;favicon.ico&amp;#34;&amp;gt; &amp;lt;script defer src=&amp;#34;main.dart&amp;#34; type=&amp;#34;application/dart&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script defer src=&amp;#34;packages/browser/dart.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;textarea id=&amp;#34;editor&amp;#34; cols=&amp;#34;80&amp;#34; autofocus&amp;gt;&amp;lt;/textarea&amp;gt; &amp;lt;button id=&amp;#34;btnClearText&amp;#34;&amp;gt;Clear&amp;lt;/button&amp;gt;  &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; Now let&amp;rsquo;s connect this button with clearEditor() function in the main.dart file. Everytime the clear button is click the clearEditor() function is call, then we assign an empty string to theEditor.</description>
     </item>
     
     <item>
@@ -104,7 +104,7 @@ import &amp;#39;dart:html&amp;#39;; void main() { TextAreaElement theEditor = qu
       
       <guid>https://ram535.github.io/website/dartlang/unitialized_variables/</guid>
       <description>Uninitialized variables have an initial value of null because everyting in dart is an object.
-void main() { var a; num b; int c; double d; bool e; print(a); // null print(b); // null print(c); // null print(d); // null print(e); // null }  </description>
+void main() { var a; num b; int c; double d; bool e; print(a); // null  print(b); // null  print(c); // null  print(d); // null  print(e); // null  } </description>
     </item>
     
   </channel>
