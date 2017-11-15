@@ -12,7 +12,7 @@ To install flutter follow this steps:
 - add the path on your machine (adjust the path that correspond to your machine)
 
 {{< highlight shell >}}
-export PATH=$HOME/projects/flutter/bin:$PATH
+export PATH=$HOME/bin/flutter/bin:$PATH
 {{< /highlight >}}
 
 - run **flutter doctor** to see if there are any dependencies you need to install to complete the setup
@@ -32,6 +32,12 @@ Let's check if our devices is detected by running this command:
 flutter devices
 {{< /highlight >}}
 
+The first time you have to run this command to agree with the terms and licenses.
+
+{{< highlight shell >}}
+flutter doctor --android-licenses
+{{< /highlight >}}
+
 Let's run the demo app to check that everything set up right.
 
 {{< highlight shell >}}
@@ -39,9 +45,9 @@ cd myapp
 flutter run
 {{< /highlight >}}
 
-![image](../../img/flutter-hello-world-demo.jpg)
+![image](../../img/flutter-hello-world-demo01.jpg)
 
-Go to **lib/main.dart** and modify the main funtion.
+Go to **lib/main.dart** and modify the file with this code and run again the app.
 
 {{< highlight dart >}}
 import 'package:flutter/material.dart';
@@ -53,3 +59,5 @@ void main() {
   )));
 }
 {{< /highlight >}}
+
+![image](../../img/flutter-hello-world-demo02.jpg)

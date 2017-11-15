@@ -29,7 +29,7 @@ stagehand 1.1.6 In this case there is only one packages install. stagehand gener
       
       <guid>https://ram535.github.io/website/post/flutter_hello_world/</guid>
       <description>To install flutter follow this steps:
- clone the repo add the path on your machine (adjust the path that correspond to your machine)  export PATH=$HOME/projects/flutter/bin:$PATH  run flutter doctor to see if there are any dependencies you need to install to complete the setup  Now let&amp;rsquo;s create a flutter project
+ clone the repo add the path on your machine (adjust the path that correspond to your machine)  export PATH=$HOME/bin/flutter/bin:$PATH  run flutter doctor to see if there are any dependencies you need to install to complete the setup  Now let&amp;rsquo;s create a flutter project
 flutter create flutter_hello_world We can use a simulator or a divice to test the demo app. For me is more easy to do it in actual device because is faster than using a simulator.</description>
     </item>
     

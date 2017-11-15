@@ -36,7 +36,7 @@
 <li>add the path on your machine (adjust the path that correspond to your machine)</li>
 </ul>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">export PATH<span style="color:#f92672">=</span>$HOME/projects/flutter/bin:$PATH</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">export PATH<span style="color:#f92672">=</span>$HOME/bin/flutter/bin:$PATH</code></pre></div>
 
 <ul>
 <li>run <strong>flutter doctor</strong> to see if there are any dependencies you need to install to complete the setup</li>
@@ -53,14 +53,18 @@ Let&rsquo;s check if our devices is detected by running this command:</p>
 
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">flutter devices</code></pre></div>
 
+<p>The first time you have to run this command to agree with the terms and licenses.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">flutter doctor --android-licenses</code></pre></div>
+
 <p>Let&rsquo;s run the demo app to check that everything set up right.</p>
 
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">cd myapp
 flutter run</code></pre></div>
 
-<p><img src="../../img/flutter-hello-world-demo.jpg" alt="image" /></p>
+<p><img src="../../img/flutter-hello-world-demo01.jpg" alt="image" /></p>
 
-<p>Go to <strong>lib/main.dart</strong> and modify the main funtion.</p>
+<p>Go to <strong>lib/main.dart</strong> and modify the file with this code and run again the app.</p>
 
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#39;package:flutter/material.dart&#39;</span>;
 <span style="color:#66d9ef">void</span> main() {
@@ -70,6 +74,8 @@ flutter run</code></pre></div>
     textDirection: TextDirection.ltr,
   )));
 }</code></pre></div>
+
+<p><img src="../../img/flutter-hello-world-demo02.jpg" alt="image" /></p>
 
 
 </div>
